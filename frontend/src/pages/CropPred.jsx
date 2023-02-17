@@ -1,4 +1,5 @@
 import React from 'react'
+import './styles/croppred.css'
 
 const CropPred = () => {
   return (

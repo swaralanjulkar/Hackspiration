@@ -1,4 +1,5 @@
 import React from 'react'
+import './styles/govtschemes.css'
 
 const GovtSchemes = () => {
   return (
