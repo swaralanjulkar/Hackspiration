@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/home.css'
-import WeatherWidget from '../components/WeatherWidget'
+import WeatherWidget from '../components/Weather'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Services from '../components/Services'

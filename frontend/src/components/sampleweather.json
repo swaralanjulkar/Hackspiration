@@ -1,0 +1,44 @@
+{
+    "coord": {
+    "lon": 73.8099,
+    "lat": 18.4562
+    },
+    "weather": [
+    {
+    "id": 800,
+    "main": "Clear",
+    "description": "clear sky",
+    "icon": "01d"
+    }
+    ],
+    "base": "stations",
+    "main": {
+    "temp": 33.59,
+    "feels_like": 31.1,
+    "temp_min": 33.59,
+    "temp_max": 33.59,
+    "pressure": 1011,
+    "humidity": 9,
+    "sea_level": 1011,
+    "grnd_level": 948
+    },
+    "visibility": 10000,
+    "wind": {
+    "speed": 2.94,
+    "deg": 75,
+    "gust": 3.96
+    },
+    "clouds": {
+    "all": 0
+    },
+    "dt": 1676718875,
+    "sys": {
+    "country": "IN",
+    "sunrise": 1676683878,
+    "sunset": 1676725588
+    },
+    "timezone": 19800,
+    "id": 1252736,
+    "name": "Yerandwane",
+    "cod": 200
+    }
