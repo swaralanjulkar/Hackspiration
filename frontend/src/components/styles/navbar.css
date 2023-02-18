@@ -1,4 +1,23 @@
-div{
-    background-color: red;
+.navbar{
+    background-color: #38465094;
+}
+ .container-fluid{
+       margin: 0px 3%;
+  }
+   .navbar-brand{
+    font-family: 'Julee', cursive;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.navbar-nav{
+    margin-left: auto;
+}
 
+.nav-item{
+    padding: 0px 18px;
+}
+.nav-link{
+    font-family: 'Patrick Hand', cursive;
+    font-size:1.3rem ;
+    color: black;
 }
