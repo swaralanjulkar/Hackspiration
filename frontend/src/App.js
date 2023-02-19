@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import Weather from "./components/Weather";
 import CropAna from "./pages/CropAna";
 import CropPred from "./pages/CropPred";
@@ -11,6 +12,7 @@ const App = () => {
   return (
     <>
     <Router>
+      <Navbar/>
           <Routes>
             <Route path="/" element={<Home />} exact />
             <Route path="/CropAna" element={<CropAna />} exact />
