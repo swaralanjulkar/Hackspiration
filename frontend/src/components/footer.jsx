@@ -3,8 +3,8 @@ import'./styles/footer.css'
 
 const Footer = () => {
   return (
-    <div>
-      
+    <div className='footer'>
+      <p>all rights reserved </p>
     </div>
   )
 }

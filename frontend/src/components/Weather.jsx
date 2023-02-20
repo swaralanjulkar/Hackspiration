@@ -6,12 +6,8 @@ import "./styles/weather.css";
 import {
   MDBCard,
   MDBCardBody,
-  MDBCardImage,
-  MDBCol,
   MDBContainer,
-  MDBIcon,
-  MDBRow,
-  MDBTypography,
+  // MDBTypography,
 } from "mdb-react-ui-kit";
 
 const Weather = () => {
@@ -20,18 +16,21 @@ const Weather = () => {
   const [weatherData, setWeatherData] = useState(null);
 
   useEffect(() => {
-    const fetchWeatherData = async () => {
+    const fetchWeatherData =  () => {
       navigator.geolocation.getCurrentPosition((position) => {
         setLat(position.coords.latitude);
         setLon(position.coords.longitude);
         console.log("Latitude is:", lat);
         console.log("Longitude is:", lon);
       });
-      const url = `https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${lon}&units=metric&APPID=43ecf2c26620fb2a1cd71000ada8ffd6`;
 
-      console.log(url);
+      const API_key = '43ecf2c26620fb2a1cd71000ada8ffd6';
 
-      axios
+      const todayurl = `https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${lon}&units=metric&APPID=${API_key}`;
+
+      console.log(todayurl);
+
+      lat && axios
         .get(
           `https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${lon}&units=metric&APPID=43ecf2c26620fb2a1cd71000ada8ffd6`
         )
@@ -53,51 +52,38 @@ const Weather = () => {
 
   return (
     <>
-    {weatherData && (<section className="vh-100" style={{ backgroundColor: "#f5f6f7" }}>
-      <MDBContainer className="h-100">
-        <MDBRow className="justify-content-center align-items-center h-100">
-          <MDBCol md="10" lg="8" xl="6">
+    {weatherData && (
+      <MDBContainer className="w-100 mr-0"  style={{position: "absolute", right:"5vw" }}>
+        {/* <MDBRow
+          className="justify-content-center align-items-center h-100"
+          style={{ color: "#282828" }}
+        >
+          <MDBCol md="9" lg="7" xl="5"> */}
             <MDBCard
-              className="bg-dark text-white"
-              style={{ borderRadius: "40px" }}
+              className="mb-4 gradient-custom"
+              style={{ borderRadius: "25px",backgroundColor:"transparent",border:"none", width: "50%", marginLeft: "auto" }}
             >
-              <div className="bg-image" style={{ borderRadius: "35px" }}>
-                <MDBCardImage
-                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/draw1.webp"
-                  className="card-img"
-                  alt="weather"
-                />
-                <div
-                  className="mask"
-                  style={{ backgroundColor: "rgba(190, 216, 232, .5)" }}
-                ></div>
-              </div>
-              <div className="card-img-overlay text-dark p-5">
-                <MDBTypography tag="h4" className="mb-0">
-                  {weatherData.name}, {weatherData.sys.country}
-                </MDBTypography>
-                <p className="display-2 my-3">{weatherData.main.temp}</p>
-                  <p className="mb-2">
-                  Feels Like: <strong>{weatherData.main.feels_like}</strong>
-                  </p>
-                  <p className="mb-2">
-                  Max: <strong>{weatherData.main.temp_max}</strong>
-                  </p>
-                  <p className="mb-2">
-                  Min: <strong>{weatherData.main.temp_min}</strong>
-                  </p>
-                  <p className="mb-2">
-                  Humidity: <strong>{weatherData.main.humidity}</strong>
-                  </p>
-                  {/* Feels Like: <strong>{weatherData.main.feels_like}</strong>
-                  Feels Like: <strong>{weatherData.main.feels_like}</strong> */}
-                <MDBTypography tag="h3">{weatherData.weather[0].main}</MDBTypography>
-              </div>
+              <MDBCardBody className="p-4" >
+                <div className="d-flex justify-content-between pb-2">
+                  <div>
+                    <h2 className="display-2">
+                      <strong>{weatherData.main.temp} °c</strong>
+                    </h2>
+                    <p className="text-muted mb-0">{weatherData.name}, {weatherData.sys.country}</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu3.webp"
+                      width="150px" alt=""
+                    />
+                  </div>
+                </div>
+              </MDBCardBody>
             </MDBCard>
-          </MDBCol>
-        </MDBRow>
+          {/* </MDBCol>
+        </MDBRow> */}
       </MDBContainer>
-    </section>)}
+    )}
     </>
   );
 };

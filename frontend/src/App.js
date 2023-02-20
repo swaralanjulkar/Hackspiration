@@ -7,6 +7,7 @@ import CropPred from "./pages/CropPred";
 import FertilizerPred from "./pages/FertilizerPred";
 import GovtSchemes from "./pages/GovtSchemes";
 import Home from "./pages/Home";
+import OurTeam from "./pages/OurTeam";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
             <Route path="/FertilizerPred" element={<FertilizerPred />} exact />
             <Route path="/govtschemes" element={<GovtSchemes />} exact />
             <Route path="/weather" element={<Weather />} exact />
+            <Route path="/ourteam" element={<OurTeam />} exact />
           </Routes>
       </Router>
     </>

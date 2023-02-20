@@ -1,0 +1,12 @@
+.banner{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../images/cultivobanner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* object-fit: fill; */
+    width: "100vw";
+    border: 2px solid navy;
+    background-size: cover;
+    margin-top: 70px;
+}
