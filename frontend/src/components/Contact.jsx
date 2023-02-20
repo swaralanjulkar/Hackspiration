@@ -1,7 +1,7 @@
 import React, {useRef} from "react";
 
 import emailjs from '@emailjs/browser';
-import "./styles/contact.css";
+// import "./styles/contact.css";
 import { AiOutlineMail } from "react-icons/ai";
 import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";

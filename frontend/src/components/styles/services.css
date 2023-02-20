@@ -1,0 +1,70 @@
+
+        /* our services */
+        .Service-block {
+            margin-top: 20vh;
+            margin-bottom: 20vh;
+            display: grid;
+            grid-template-columns: 18% 18% 18% 18% 18%;
+            height: 55vh;
+            justify-content: center;
+            align-items: center;
+          
+
+        }
+
+        .card {
+            
+            width: 85%;
+            height: 85%;
+            
+        }
+
+        .card:hover{
+           
+           cursor: pointer;
+        }
+
+        .card img {
+            height: 100px;
+            width: 100%;
+        }
+
+        .middle {
+            height: 95%;
+        }
+
+        .Show{
+            margin-top: 5px;
+            border-radius: 50px;
+            
+        }
+
+        @media (max-width:900px) {
+            .card {
+                width: 95%;
+            }
+
+            .Service-block {
+                height: 48vh;
+            }
+        }
+
+        @media (max-width:750px) {
+
+            .Service-block {
+                grid-template-columns: 60%;
+                height: 100vh;
+                
+            }
+
+            .card,
+            .middle {
+                height: 90%;
+            }
+
+           
+
+
+        }
+
+        /* our services-end */
