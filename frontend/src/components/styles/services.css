@@ -1,11 +1,24 @@
 
         /* our services */
-        .Service-block {
+
+        .Our-Services{
+            display: grid;
+            grid-template-rows: 3% 97%;
+            justify-content: center;
             margin-top: 20vh;
             margin-bottom: 20vh;
+            height: 80vh;
+        }
+        .Our-Services h2{
+            margin: auto;
+          
+        }
+
+        .Service-block {
+            margin-top: 75px;
             display: grid;
             grid-template-columns: 18% 18% 18% 18% 18%;
-            height: 55vh;
+            height: 90%;
             justify-content: center;
             align-items: center;
           
@@ -15,7 +28,7 @@
         .card {
             
             width: 85%;
-            height: 85%;
+            height: 75%;
             
         }
 
@@ -30,7 +43,7 @@
         }
 
         .middle {
-            height: 95%;
+            height: 85%;
         }
 
         .Show{
@@ -41,25 +54,31 @@
 
         @media (max-width:900px) {
             .card {
-                width: 95%;
+                width: 90%;
             }
-
-            .Service-block {
-                height: 48vh;
+             
+            .Our-Services{
+                height: 95vh;
             }
+            
         }
 
         @media (max-width:750px) {
 
             .Service-block {
                 grid-template-columns: 60%;
-                height: 100vh;
+                height: 95%;
                 
+            }
+
+            .Our-Services{
+                height: 300vh;
             }
 
             .card,
             .middle {
-                height: 90%;
+                
+                height: 85%;
             }
 
            

@@ -1,0 +1,44 @@
+#contact{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 35% 50%;
+    margin: 30px 0px;
+    /* width: 60vw; */
+
+}
+
+@media(max-width:750px){
+    #contact{
+        grid-template-rows: 50% 50%;    
+    }
+}
+
+.leftside,.rightside{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.rightside{
+   
+    height: 100%;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+}
+.contact-form input,textarea{
+    margin: 20px auto;
+    width: 200%;
+    border-radius: 4;
+}
+
+.contact-option{
+    margin: 20px 0px;
+}
+
+.send {
+    text-decoration: none;
+}
