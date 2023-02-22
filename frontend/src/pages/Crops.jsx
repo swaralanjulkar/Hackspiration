@@ -65,8 +65,8 @@ const Crops = () => {
                     </>
                 ):<LoadingBox />
             } */}
-            <p className='text-sm md:text-2xl my-20 align-middle justify-center'>Crop wise price Forecast </p>
-            <div className="my-10 flex gap-5 justify-between flex-wrap group">
+            <p >Crop wise price Forecast </p>
+            <div >
             
                 {Crops.map((content, i) => (
                 
