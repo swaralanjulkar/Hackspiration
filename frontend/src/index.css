@@ -7,11 +7,16 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    
+}
+body{
+    background-color: #e9ecef;
 }
 
 
 html{
     scroll-behavior: smooth;
+    
 }
 
 ::-webkit-scrollbar{

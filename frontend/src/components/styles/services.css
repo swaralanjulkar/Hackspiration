@@ -8,16 +8,22 @@
             margin-top: 20vh;
             margin-bottom: 20vh;
             height: 80vh;
+            background-color:#a3cfbb30;
+            border-radius: 5px;
         }
+
+
         .Our-Services h2{
-            margin: auto;
+            margin: 20px auto;
+            font-family:'Lobster', cursive;;
+            font-weight: 600;
           
         }
 
         .Service-block {
             margin-top: 75px;
             display: grid;
-            grid-template-columns: 18% 18% 18% 18% 18%;
+            grid-template-columns:  22% 22% 22% 22%;
             height: 90%;
             justify-content: center;
             align-items: center;
@@ -25,10 +31,23 @@
 
         }
 
+        .card-body h5{
+            font-family:'Julee', cursive;
+            font-weight: 600;
+
+        }
+
+        .card-text{
+            font-family:  'Kalam', cursive;
+        }
+
         .card {
             
             width: 85%;
-            height: 75%;
+            height: 65%;
+            padding: 5%;
+            border-radius: 15px;
+            background-color: #a3cfbb4d;
             
         }
 
@@ -49,6 +68,7 @@
         .Show{
             margin-top: 5px;
             border-radius: 50px;
+            font-family: cursive;
             
         }
 
@@ -67,18 +87,18 @@
 
             .Service-block {
                 grid-template-columns: 60%;
-                height: 95%;
+                height: 85%;
                 
             }
 
             .Our-Services{
-                height: 300vh;
+                height: 250vh;
             }
 
             .card,
             .middle {
                 
-                height: 85%;
+                height: 80%;
             }
 
            

@@ -1,8 +1,10 @@
 .testi{
    
     border: 1px solid lightgray ;
-    margin: 10px 5px;
+    margin: 35px 55px;
     border-radius: 25px;
+    background-color: #a3cfbb4d;
+
     
 
 }
@@ -20,15 +22,27 @@
     margin-top: 20px;
     margin-bottom: 20px;
     height: 120vh;
+    background-color: #a3cfbb30;
+    border-radius: 5px;
 }
 
 .testimonial-heading{
  margin-top: 20px;
+}
+
+.testimonial-heading h3{
+    font-family:'Lobster', cursive;
+    font-weight: 600;
 
 }
 
+@media(max-width:900px){
+    .main-Testimonial{
+        height: 100vh;
+    }
+}
 @media(max-width:750px){
     .main-Testimonial{
-        height: 220vh;
+        height: 160vh;
     }
 }

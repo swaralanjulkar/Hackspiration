@@ -6,6 +6,7 @@
   margin: 30px 0px;
   /* width: 60vw; */
   width: 100vw;
+ 
 }
 
 @media (max-width: 750px) {
@@ -20,6 +21,10 @@
   display: grid;
   justify-content: center;
   align-items: center;
+}
+
+.leftside h2,h5{
+  font-family: 'Lobster',cursive6;
 }
 .rightside {
   height: 100%;

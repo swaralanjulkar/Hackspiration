@@ -29,7 +29,7 @@ const Services = () => {
               </button>
             </div>
           </div>
-          <div className="card  shadow-lg ">
+          <div className="card  shadow-lg middle">
             <img
               className="card-img-top "
               src={ferti}
@@ -71,7 +71,7 @@ const Services = () => {
               </button>
             </div>
           </div>
-          <div class="card shadow-lg">
+          {/* <div class="card shadow-lg">
             <img
               className="card-img-top"
               src={disImg}
@@ -91,7 +91,7 @@ const Services = () => {
                 Show More
               </button>
             </div>
-          </div>
+          </div> */}
           <div className="card shadow-lg">
             <img className="card-img-top" src={gov} alt="Card image cap"></img>
             <div className="card-body">

@@ -167,7 +167,7 @@ const Testimonials = () => {
      <section className="main-Testimonial shadow-lg" >
   <div className="row d-flex justify-content-center testimonial-heading">
     <div className="col-md-10 col-xl-8 text-center">
-      <h3 className="mb-4">Testimonials</h3>
+      <h3 className="mb-4 mt-465">Testimonials</h3>
       <p className="mb-4 pb-2 mb-md-5 pb-md-0">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
         numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
@@ -189,23 +189,7 @@ const Testimonials = () => {
         adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
         tenetur.
       </p>
-      <ul className="list-unstyled d-flex justify-content-center mb-0">
-        <li>
-          <i className="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i className="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i className="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i className="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i className="fas fa-star-half-alt fa-sm text-warning"></i>
-        </li>
-      </ul>
+      
     </div>
     <div className="col-md-4 mb-5 mb-md-0 testi shadow">
       <div className="d-flex justify-content-center mb-4">
@@ -218,23 +202,7 @@ const Testimonials = () => {
         <i className="fas fa-quote-left pe-2"></i>Ut enim ad minima veniam, quis nostrum
         exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.
       </p>
-      <ul className="list-unstyled d-flex justify-content-center mb-0">
-        <li>
-          <i className="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i className="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i className="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i className="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i className="fas fa-star fa-sm text-warning"></i>
-        </li>
-      </ul>
+     
     </div>
     <div className="col-md-4 mb-0 testi shadow">
       <div className="d-flex justify-content-center mb-4">
@@ -247,23 +215,7 @@ const Testimonials = () => {
         <i className="fas fa-quote-left pe-2"></i>At vero eos et accusamus et iusto odio
         dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
       </p>
-      <ul className="list-unstyled d-flex justify-content-center mb-0">
-        <li>
-          <i className="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i className="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i className="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i className="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i className="far fa-star fa-sm text-warning"></i>
-        </li>
-      </ul>
+     
     </div>
   </div>
 </section>

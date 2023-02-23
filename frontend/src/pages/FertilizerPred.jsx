@@ -4,78 +4,78 @@ import './styles/fertilizer.css'
 const FertilizerPred = () => {
   return (
     <>
-    <section class="form-container shadow-lg ">
+    <section className="form-container shadow-lg ">
 
-<div class="strip shadow-lg">
+<div className="strip shadow-lg">
     <div> <h2>Fertilizer Prediction</h2></div>  
 </div>
-<form class="form-structure ">
-    <div class="row">
-        <div class="col">
+<form className="form-structure ">
+    <div className="row">
+        <div className="col">
            
-            <div class="form-outline">
+            <div className="form-outline">
                 
-                <input type="text" id="Name" class="form-control" placeholder="Enter Your Name"/>
+                <input type="text" id="Name" className="form-control" placeholder="Enter Your Name"/>
             </div>
         </div>
-        <div class="col">
-            <div class="form-outline">
-                <input type="email" id="Email" class="form-control" placeholder="abc@gmail.com" />
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-
-            <div class="form-outline">
-                <label class="form-label" for="N">Nitrogen</label>
-                <input type="number" id="Nitrogen" class="form-control" placeholder="'N'-Value" />
-            </div>
-        </div>
-        <div class="col">
-
-            <div class="form-outline">
-                <label class="form-label" for="K">Potassium</label>
-                <input type="number" id="Potassium" class="form-control" placeholder="'K'-Value" />
-            </div>
-        </div>
-        <div class="col">
-
-            <div class="form-outline">
-                <label class="form-label" for="P">Phosporous</label>
-                <input type="number" id="Phosporous" class="form-control" placeholder="'P'-Value" />
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-
-            <div class="form-outline">
-                <label class="form-label" for="Temp">Temprature</label>
-                <input type="number" id="Temprature" class="form-control" placeholder="in Celsius" />
-            </div>
-        </div>
-        <div class="col">
-
-            <div class="form-outline">
-                <label class="form-label" for="Humidity">Humidity</label>
-                <input type="number" id="Humidity" class="form-control" placeholder=" % of Humidity " />
-            </div>
-        </div>
-        <div class="col">
-
-            <div class="form-outline">
-                <label class="form-label" for="moist">Moisture</label>
-                <input type="number" id="Moisture" class="form-control" placeholder="Moisture content" />
+        <div className="col">
+            <div className="form-outline">
+                <input type="email" id="Email" className="form-control" placeholder="abc@gmail.com" />
             </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col">
-            <label for="Soil-type " class="form-label">Soil-type</label>
-            <select id="inputState" for="soil-type" class="form-control">
+    <div className="row">
+        <div className="col">
+
+            <div className="form-outline">
+                <label className="form-label" htmlFor="N">Nitrogen</label>
+                <input type="number" id="Nitrogen" className="form-control" placeholder="'N'-Value" />
+            </div>
+        </div>
+        <div className="col">
+
+            <div className="form-outline">
+                <label className="form-label" htmlFor="K">Potassium</label>
+                <input type="number" id="Potassium" className="form-control" placeholder="'K'-Value" />
+            </div>
+        </div>
+        <div className="col">
+
+            <div className="form-outline">
+                <label className="form-label" htmlFor="P">Phosporous</label>
+                <input type="number" id="Phosporous" className="form-control" placeholder="'P'-Value" />
+            </div>
+        </div>
+    </div>
+    <div className="row">
+        <div className="col">
+
+            <div className="form-outline">
+                <label className="form-label" htmlFor="Temp">Temprature</label>
+                <input type="number" id="Temprature" className="form-control" placeholder="in Celsius" />
+            </div>
+        </div>
+        <div className="col">
+
+            <div className="form-outline">
+                <label className="form-label" htmlFor="Humidity">Humidity</label>
+                <input type="number" id="Humidity" className="form-control" placeholder=" % of Humidity " />
+            </div>
+        </div>
+        <div className="col">
+
+            <div className="form-outline">
+                <label className="form-label" htmlFor="moist">Moisture</label>
+                <input type="number" id="Moisture" className="form-control" placeholder="Moisture content" />
+            </div>
+        </div>
+    </div>
+
+    <div className="row">
+        <div className="col">
+            <label htmlFor="Soil-type " className="form-label">Soil-type</label>
+            <select id="inputState" htmlFor="soil-type" className="form-control">
               <option selected>Choose...</option>
               <option>Black</option>
               <option>Clayey</option>
@@ -84,9 +84,9 @@ const FertilizerPred = () => {
             </select>
         </div>
 
-        <div class="col">
-            <label for="Crop-type" class="form-label">Crop-type</label>
-            <select id="inputState"  for="crop-type" class="form-control">
+        <div className="col">
+            <label htmlFor="Crop-type" className="form-label">Crop-type</label>
+            <select id="inputState"  htmlFor="crop-type" className="form-control">
               <option selected>Choose...</option>
               <option>Cotton</option>
               <option>Ground-Nut</option>
@@ -103,7 +103,7 @@ const FertilizerPred = () => {
     </div>
 
      
-    <button type="submit" for="submit" class="btn btn-success btn-block Predict">Predict</button>
+    <button type="submit" htmlFor="submit" className="btn btn-success btn-block Predict">Predict</button>
 
 </form>
 </section>

@@ -43,8 +43,9 @@ const Crops = () => {
     
     return (
 
-        <div className='mt-10 container'>
-            {/* {
+   
+      <div className=' container' style={{ marginTop: "100px" }}>
+      {/* {
                 state.data? (
                     <>
                     <div className="flex flex-wrap gap-[1%]  justify-center align-middle">
@@ -65,26 +66,47 @@ const Crops = () => {
                     </>
                 ):<LoadingBox />
             } */}
-            <p >Crop wise price Forecast </p>
-            <div >
-            
-                {Crops.map((content) => (
-                
-                    <div
-                    key={content.name}
-                    className="min-w-[10rem] md:min-w-[14rem] duration-300 cursor-pointer border-2 border-slate-200 rounded-xl text-center bg-bg_light_primary p-6 flex-1
-                    " 
-                    >
-                    <Link to={`/priceforecast/${content.name.toLowerCase()}`}>
-                    <img src={content.icon} alt="..." className="mx-auto h-20 w-20 " />
-                    <h6>{content.name}</h6>
-                    </Link>
-                    </div>
-                
-                ))}
-            </div>
-        </div>
-    )
+      <div className="" style={{
+        display: "grid",
+        gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr",
+
+        alignItems: "center",
+        padding: "30px"
+
+
+
+      }
+
+      }>
+
+        {Crops.map((content, i) => (
+
+          <div
+            key={content.name}
+            className="shadow h-80 
+                    "
+                    style={{
+                      margin: "3vw"
+                      , padding:"10px"
+                    }}    
+          >
+            <Link style={{display:"flex",flexDirection:"column"}} to={`/priceforecast/${content.name.toLowerCase()}`}>
+              <img src={content.icon} alt="..." className=" " style={{
+                height: "95%", width: "95%", margin:"10px auto",
+              }}/>
+              <h6 className='text-center nav-link' >{content.name}</h6>
+            </Link>
+          </div>
+
+        ))}
+      </div>
+    </div>
+  )
 }
 
 export default Crops
+
+
+
+
+
