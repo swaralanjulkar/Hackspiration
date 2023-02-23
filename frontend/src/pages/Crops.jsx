@@ -1,50 +1,48 @@
-import React,{useEffect,
-    //  useState,useContext,
-      useReducer} from 'react';
+import React, {
+  useEffect,
+  //  useState,useContext,
+  useReducer,
+} from "react";
 import content from "../utils/content";
 import axios from "axios";
 // import Top5 from '../components/Top5';
 // import Bottom5 from '../components/Bottom5';
 // import Sixmonths from '../components/Sixmonths';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 // import LoadingBox from '../components/LoadingBox';
 
 // const DataContext = React.createContext()
 
 const dataReducer = (state, action) => {
   switch (action.type) {
-    case 'SET_DATA':
-      return { ...state, data: action.payload }
+    case "SET_DATA":
+      return { ...state, data: action.payload };
     default:
-      return state
+      return state;
   }
-}
-
+};
 
 const Crops = () => {
+  const { Crops } = content;
+  // eslint-disable-next-line
+  // const [state, dispatch] = useReducer(dataReducer, { data: null });
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  //   // const getData = async () => {
+  //   //   try {
+  //   //     const { data } =
+  //   //       // await axios.get("http://127.0.0.1:5000/api/cropprice");
+  //   //       // console.log(data)
+  //   //       dispatch({ type: "SET_DATA", payload: data });
+  //   //   } catch (err) {
+  //   //     console.log(err);
+  //   //   }
+  //   // };
+  //   // getData();
+  // }, []);
 
-    const { Crops } = content;
-    // eslint-disable-next-line
-    const [state, dispatch] = useReducer(dataReducer, { data: null })
-    useEffect(() => {
-        window.scrollTo(0, 0);
-        const getData = async () => {
-          try {
-            const { data } = await axios.get('http://127.0.0.1:5000/api/cropprice');
-            // console.log(data)
-            dispatch({ type: 'SET_DATA', payload: data })
-          } catch (err) {
-            console.log(err);
-          }
-        };
-        getData();
-    }, []);
-
-    
-    return (
-
-   
-      <div className=' container' style={{ marginTop: "100px" }}>
+  return (
+    <div className=" container" style={{ marginTop: "100px" }}>
       {/* {
                 state.data? (
                     <>
@@ -66,47 +64,47 @@ const Crops = () => {
                     </>
                 ):<LoadingBox />
             } */}
-      <div className="" style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr",
+      <div
+        className=""
+        style={{
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr",
 
-        alignItems: "center",
-        padding: "30px"
-
-
-
-      }
-
-      }>
-
+          alignItems: "center",
+          padding: "30px",
+        }}
+      >
         {Crops.map((content, i) => (
-
           <div
             key={content.name}
             className="shadow h-80 
                     "
-                    style={{
-                      margin: "3vw"
-                      , padding:"10px"
-                    }}    
+            style={{
+              margin: "3vw",
+              padding: "10px",
+            }}
           >
-            <Link style={{display:"flex",flexDirection:"column"}} to={`/priceforecast/${content.name.toLowerCase()}`}>
-              <img src={content.icon} alt="..." className=" " style={{
-                height: "95%", width: "95%", margin:"10px auto",
-              }}/>
-              <h6 className='text-center nav-link' >{content.name}</h6>
+            <Link
+              style={{ display: "flex", flexDirection: "column" }}
+              to={`/priceforecast/${content.name.toLowerCase()}`}
+            >
+              <img
+                src={content.icon}
+                alt="..."
+                className=" "
+                style={{
+                  height: "95%",
+                  width: "95%",
+                  margin: "10px auto",
+                }}
+              />
+              <h6 className="text-center nav-link">{content.name}</h6>
             </Link>
           </div>
-
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Crops
-
-
-
-
-
+export default Crops;

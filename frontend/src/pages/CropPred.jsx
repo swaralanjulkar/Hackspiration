@@ -2,6 +2,51 @@ import axios from "axios";
 import React, { useReducer, useState } from "react";
 import "./styles/croppred.css";
 
+// const watermelon =
+//   "https://drive.google.com/uc?export=view&id=1PnS3BJhRNrkvDxrxyG-uKZWpBC6x1VL6";
+
+const apple =
+  "https://drive.google.com/uc?export=view&id=14WG7biXxbXLr7boibdARie5ZyoROaYjs";
+const banana =
+  "https://drive.google.com/uc?export=view&id=1dNwmwevkerTI2k6keErFMHGWMA7UtY5u";
+const balckgram =
+  "https://drive.google.com/uc?export=view&id=1LQ9n4Haet5jL9OOwvQEa-l054ROdFI1e";
+const chickpea =
+  "https://drive.google.com/uc?export=view&id=1yVoVqUEhVfYyOKIq2wzK5lW4rL8r7jGQ";
+const coconut =
+  "https://drive.google.com/uc?export=view&id=1fR0M6XgVdGnuWYALqlhRNfXNVFYsSe97";
+const coffee =
+  "https://drive.google.com/uc?export=view&id=1n0S3MzU3aaJjvtVTvGbXB99CHKB5qxpz";
+const cotton =
+  "https://drive.google.com/uc?export=view&id=14tEnklftOJgMtfh2pvYPq2bio5OMXzYQ";
+const grapes =
+  "https://drive.google.com/uc?export=view&id=1Buesauc5QNn2BMyLdVJu9r6yVz-x_0HY";
+const jute =
+  "https://drive.google.com/uc?export=view&id=1Buesauc5QNn2BMyLdVJu9r6yVz-x_0HY";
+const kidneybeans =
+  "https://drive.google.com/uc?export=view&id=1ukODGQ_KFMxCM-BWgZ92VWOy8UgfjyVU";
+const lentil =
+  "https://drive.google.com/uc?export=view&id=1ApscM8NgLISBKzDBaeVxsvv8m8SmtOiU";
+const maize =
+  "https://drive.google.com/uc?export=view&id=1n1--ddZsn_MdQ6wMAWxfPcrH-X27eS6K";
+const mango =
+  "https://drive.google.com/uc?export=view&id=10lAGNhxsmu4zgny3-4ePANMi7cSasuqY";
+const mongbeans =
+  "https://drive.google.com/uc?export=view&id=1A9MDnHhAkfh6Vc2kU-ee0jwpWazGVe38";
+const mothbeans =
+  "https://drive.google.com/uc?export=view&id=1muQnurpsJ5XQiuJaPcvJRYRcXgWroJ1-";
+const muskmelon =
+  "https://drive.google.com/uc?export=view&id=1QJyGB7ypkLsfKwrdj95F7TLeFYvGnpYQ";
+const orange =
+  "https://drive.google.com/uc?export=view&id=1JwOyIQCtpJhP3u1GZCgwq-dLwcLPY-X0";
+const papaya =
+  "https://drive.google.com/uc?export=view&id=1ZiMpEfPUiqyIayMQo1d2Tc0O7PsXXWB0";
+const pigeon_peas =
+  "https://drive.google.com/uc?export=view&id=1eaYxYzi2Y3ntOhMROT9WP-kjjUlKaYKY";
+const pomogranate =
+  "https://drive.google.com/uc?export=view&id=1Kzhvam9Ge5P8RWX5vYDVgODtmdLNwe5z";
+const rice =
+  "https://drive.google.com/uc?export=view&id=1l6cB0CjXd1LF9QevgTLsrxG3ex8JxS_D";
 const watermelon =
   "https://drive.google.com/uc?export=view&id=1PnS3BJhRNrkvDxrxyG-uKZWpBC6x1VL6";
 
@@ -202,7 +247,7 @@ const CropPred = () => {
           <div>{state.data.context.description}</div>
           <div>
             {" "}
-            <img src={watermelon} alt="" />
+            <img src={state.data.context.name} alt="" />
           </div>
           {/* <AlternativeCrops data={state.data.context.main} />
             <h4 className='my-10 font-Inria'>Alternative Suitable Crops</h4>

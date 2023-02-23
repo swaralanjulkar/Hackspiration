@@ -1,109 +1,91 @@
+/* our services */
 
-        /* our services */
+.Our-Services {
+  display: grid;
+  grid-template-rows: 3% 97%;
+  justify-content: center;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  height: 80vh;
+  background-color: #a3cfbb30;
+  border-radius: 5px;
+}
 
-        .Our-Services{
-            display: grid;
-            grid-template-rows: 3% 97%;
-            justify-content: center;
-            margin-top: 20vh;
-            margin-bottom: 20vh;
-            height: 80vh;
-            background-color:#a3cfbb30;
-            border-radius: 5px;
-        }
+.Our-Services h2 {
+  margin: 20px auto;
+  font-family: "Lobster", cursive;
+  font-weight: 600;
+}
 
+.Service-block {
+  margin-top: 75px;
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+}
 
-        .Our-Services h2{
-            margin: 20px auto;
-            font-family:'Lobster', cursive;;
-            font-weight: 600;
-          
-        }
+.card-body h5 {
+  font-family: "Julee", cursive;
+  font-weight: 600;
+}
 
-        .Service-block {
-            margin-top: 75px;
-            display: grid;
-            grid-template-columns:  22% 22% 22% 22%;
-            height: 90%;
-            justify-content: center;
-            align-items: center;
-          
+.card-text {
+  font-family: "Kalam", cursive;
+}
 
-        }
+.card {
+  width: 85%;
+  height: 65%;
+  padding: 5%;
+  border-radius: 15px;
+  background-color: #a3cfbb4d;
+}
 
-        .card-body h5{
-            font-family:'Julee', cursive;
-            font-weight: 600;
+.card:hover {
+  cursor: pointer;
+}
 
-        }
+.card img {
+  height: 100px;
+  width: 100%;
+}
 
-        .card-text{
-            font-family:  'Kalam', cursive;
-        }
+.middle {
+  height: 85%;
+}
 
-        .card {
-            
-            width: 85%;
-            height: 65%;
-            padding: 5%;
-            border-radius: 15px;
-            background-color: #a3cfbb4d;
-            
-        }
+.Show {
+  margin-top: 5px;
+  border-radius: 50px;
+  font-family: cursive;
+}
 
-        .card:hover{
-           
-           cursor: pointer;
-        }
+@media (max-width: 900px) {
+  .card {
+    width: 90%;
+  }
 
-        .card img {
-            height: 100px;
-            width: 100%;
-        }
+  .Our-Services {
+    height: 95vh;
+  }
+}
 
-        .middle {
-            height: 85%;
-        }
+@media (max-width: 750px) {
+  .Service-block {
+    grid-template-columns: 60%;
+    height: 85%;
+  }
 
-        .Show{
-            margin-top: 5px;
-            border-radius: 50px;
-            font-family: cursive;
-            
-        }
+  .Our-Services {
+    height: 250vh;
+  }
 
-        @media (max-width:900px) {
-            .card {
-                width: 90%;
-            }
-             
-            .Our-Services{
-                height: 95vh;
-            }
-            
-        }
+  .card,
+  .middle {
+    height: 80%;
+  }
+}
 
-        @media (max-width:750px) {
-
-            .Service-block {
-                grid-template-columns: 60%;
-                height: 85%;
-                
-            }
-
-            .Our-Services{
-                height: 250vh;
-            }
-
-            .card,
-            .middle {
-                
-                height: 80%;
-            }
-
-           
-
-
-        }
-
-        /* our services-end */
+/* our services-end */

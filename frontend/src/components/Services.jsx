@@ -5,6 +5,7 @@ import disImg from "./images/dis-img.jpg";
 import anly from "./images/analy-img.webp";
 import ferti from "./images/freti-img.jpg";
 import gov from "./images/Gov-img.jpg";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
@@ -50,6 +51,7 @@ const Services = () => {
               </button>
             </div>
           </div>
+          {/* <Link to="/CropPred"> */}
           <div className="card shadow-lg middle">
             <img
               className="card-img-top"
@@ -71,6 +73,7 @@ const Services = () => {
               </button>
             </div>
           </div>
+          {/* </Link> */}
           {/* <div class="card shadow-lg">
             <img
               className="card-img-top"
@@ -105,7 +108,12 @@ const Services = () => {
                 htmlFor="submit"
                 className="btn btn-dark btn-block Show"
               >
-                Show More
+                <Link
+                  target="_blank"
+                  to="https://agricoop.nic.in/en/Acts#gsc.tab=0"
+                >
+                  Show More
+                </Link>
               </button>
             </div>
           </div>

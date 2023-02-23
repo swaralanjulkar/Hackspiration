@@ -16,7 +16,7 @@ const Weather = () => {
   const [weatherData, setWeatherData] = useState(null);
 
   useEffect(() => {
-    const fetchWeatherData =  () => {
+    const fetchWeatherData = () => {
       navigator.geolocation.getCurrentPosition((position) => {
         setLat(position.coords.latitude);
         setLon(position.coords.longitude);
@@ -24,66 +24,77 @@ const Weather = () => {
         console.log("Longitude is:", lon);
       });
 
-      const API_key = '43ecf2c26620fb2a1cd71000ada8ffd6';
+      // const API_key = '43ecf2c26620fb2a1cd71000ada8ffd6';
+      const API_key = process.env.REACT_APP_API_KEY;
 
       const todayurl = `https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${lon}&units=metric&APPID=${API_key}`;
 
       console.log(todayurl);
 
-      lat && axios
-        .get(
-          `https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${lon}&units=metric&APPID=43ecf2c26620fb2a1cd71000ada8ffd6`
-        )
-        .then((response) => {
-          // handle successful response
-          setWeatherData(response.data);
-          console.log(response.data);
-        })
-        .catch((error) => {
-          // handle error
-          console.log(error);
-        });
+      lat &&
+        axios
+          .get(
+            `https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${lon}&units=metric&APPID=43ecf2c26620fb2a1cd71000ada8ffd6`
+          )
+          .then((response) => {
+            // handle successful response
+            setWeatherData(response.data);
+            console.log(response.data);
+          })
+          .catch((error) => {
+            // handle error
+            console.log(error);
+          });
     };
     fetchWeatherData();
-
-    
-
   }, [lat, lon]);
 
   return (
     <>
-    {weatherData && (
-      <MDBContainer className="w-100 mr-0"  style={{position: "absolute", right:"5vw" }}>
-        {/* <MDBRow
+      {weatherData && (
+        <MDBContainer
+          className="w-100 mr-0"
+          style={{ position: "absolute", right: "5vw" }}
+        >
+          {/* <MDBRow
           className="justify-content-center align-items-center h-100"
           style={{ color: "#282828" }}
         >
           <MDBCol md="9" lg="7" xl="5"> */}
-            <MDBCard
-              className="mb-4 gradient-custom"
-              style={{ borderRadius: "25px",backgroundColor:"transparent",border:"none", width: "50%", marginLeft: "auto" }}
-            >
-              <MDBCardBody className="p-4" >
-                <div className="d-flex justify-content-between pb-2">
-                  <div>
-                    <h2 className="display-2">
-                      <strong>{weatherData.main.temp} °c</strong>
-                    </h2>
-                    <p className="text-muted mb-0">{weatherData.name}, {weatherData.sys.country}</p>
-                  </div>
-                  <div>
-                    <img
-                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu3.webp"
-                      width="150px" alt=""
-                    />
-                  </div>
+          <MDBCard
+            className="mb-4 gradient-custom"
+            style={{
+              borderRadius: "25px",
+              backgroundColor: "transparent",
+              border: "none",
+              width: "50%",
+              marginLeft: "auto",
+            }}
+          >
+            <MDBCardBody className="p-4">
+              <div className="d-flex justify-content-between pb-2">
+                <div>
+                  <h2 className="display-2">
+                    <strong>{weatherData.main.temp} °c</strong>
+                  </h2>
+                  <p className="text-muted mb-0">
+                    {weatherData.name}, {weatherData.sys.country}
+                  </p>
                 </div>
-              </MDBCardBody>
-            </MDBCard>
+                <div>
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu3.webp"
+                    width="150px"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </MDBCardBody>
+          </MDBCard>
           {/* </MDBCol>
         </MDBRow> */}
-      </MDBContainer>
-    )}
+        </MDBContainer>
+      )}
     </>
   );
 };
