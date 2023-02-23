@@ -68,7 +68,7 @@ const Crops = () => {
             <p >Crop wise price Forecast </p>
             <div >
             
-                {Crops.map((content, i) => (
+                {Crops.map((content) => (
                 
                     <div
                     key={content.name}

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const OurTeam = () => {
   const teamDetails = [
@@ -35,8 +36,7 @@ const OurTeam = () => {
 
     {
       name: "Abhishek Jadhav",
-      linkedin:
-        "https://www.linkedin.com/in/abhishekjadhav2002/",
+      linkedin: "https://www.linkedin.com/in/abhishekjadhav2002/",
       img: "https://media.licdn.com/dms/image/C4D03AQG1_bPw62Iybg/profile-displayphoto-shrink_100_100/0/1616989698001?e=1676505600&v=beta&t=hU22ioqslPCCixnKgVVYpFN6JuH01zBPRHD2A4RQT3c",
     },
     {
@@ -59,7 +59,7 @@ const OurTeam = () => {
 
   return (
     <>
-    <div className="elements">
+      <div className="elements">
         <div></div>
         <div></div>
         <div></div>
@@ -73,45 +73,41 @@ const OurTeam = () => {
         <div></div>
         <div></div>
       </div>
-    <div className="web-team w-full min-h-screen">
+      <div className="web-team w-full min-h-screen">
+        <div className="textcheck">
+          <h1 className="shop-title mb-12">
+            <span>Web</span>-Team
+          </h1>
+        </div>
 
-      <div className="textcheck">
-        <h1 className="shop-title mb-12">
-          <span>Web</span>-Team
-        </h1>
+        <div className="web-team-main flex justify-evenly flex-wrap w-full xl:w-4/5 xl:mx-auto">
+          {teamDetails.map((member, i) => (
+            <div
+              key={`member${i}`}
+              className="w-[250px] transition-all p-3 hover:bg-blue-300 hover:bg-opacity-20 inline-block m-6 cursor-pointer rounded-xl "
+            >
+              <Link to={member.linkedin} target="_blank" rel="noreferrer">
+                <div className="h-[200px] w-[200px] ml-2">
+                  <img
+                    className="max-h-full max-w-full rounded-full h-[450px] w-[450px] object-contain"
+                    src={member.img}
+                    alt="smart boy"
+                    loading="lazy"
+                  />
+                </div>
+                <div>
+                  <br />
+                  <p className="text-white text-center bg-h-14 bg-gradient-to-r from-blue-500 to-cyan-500 p-text-white text-allign:center bg-neutral-500 w-200 py-5 px-8 rounded-2xl font-bold  cursor-pointer   ">
+                    {member.name}
+                  </p>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
-
-
-      <div className="web-team-main flex justify-evenly flex-wrap w-full xl:w-4/5 xl:mx-auto">
-        {teamDetails.map((member, i) => (
-          <div
-            key={`member${i}`}
-            className="w-[250px] transition-all p-3 hover:bg-blue-300 hover:bg-opacity-20 inline-block m-6 cursor-pointer rounded-xl "
-          >
-            <a href={member.linkedin} target="_blank" rel="noreferrer">
-              <div className="h-[200px] w-[200px] ml-2">
-                <img
-                  className="max-h-full max-w-full rounded-full h-[450px] w-[450px] object-contain"
-                  src={member.img}
-                  alt="smart boy"
-                  loading="lazy"
-                />
-              </div>
-              <div>
-                <br />
-                <p className="text-white text-center bg-h-14 bg-gradient-to-r from-blue-500 to-cyan-500 p-text-white text-allign:center bg-neutral-500 w-200 py-5 px-8 rounded-2xl font-bold  cursor-pointer   ">
-                  {member.name}
-                </p>
-              </div>
-            </a>
-          </div>
-        ))}
-      </div>
-    </div>
     </>
-
   );
 };
-
 
 export default OurTeam;

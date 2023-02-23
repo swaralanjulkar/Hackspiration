@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import "./styles/contact.css";
 import { AiOutlineMail } from "react-icons/ai";
 import { RiMessengerLine } from "react-icons/ri";
@@ -12,14 +13,17 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_hqa04xd', 'template_qsjzc6y', form.current, '9bLaVTpIErf5wReCg');
+    emailjs.sendForm(
+      "service_hqa04xd",
+      "template_qsjzc6y",
+      form.current,
+      "9bLaVTpIErf5wReCg"
+    );
     e.target.reset();
   };
   return (
     <section id="contact">
-
-      <div className="leftside" >
-
+      <div className="leftside">
         <h5>Get In Touch</h5>
         <h2>Contact</h2>
         <div className="container contact_container">
@@ -28,60 +32,69 @@ const Contact = () => {
               <AiOutlineMail className="contact_option-icon" />
               <h4>Email</h4>
               <h5>jayeshpandav02@gmail.com</h5>
-              <a
+              <Link
                 className="send"
                 target="_blank"
                 rel="noreferrer"
-                href="mailto:jayeshpandav02@gmail.com"
+                to="mailto:jayeshpandav02@gmail.com"
               >
                 send a message
-              </a>
+              </Link>
             </article>
             <article className="contact_option">
               <RiMessengerLine className="contact_option-icon" />
               <h4>Messenger</h4>
               <h5>jayesh Pandav</h5>
-              <a
-              className="send"
+              <Link
+                className="send"
                 target="_blank"
                 rel="noreferrer"
-                href="https://m.me/profile.php?id=100075522804942"
+                to="https://m.me/profile.php?id=100075522804942"
               >
                 send a message
-              </a>
+              </Link>
             </article>
             <article className="contact_option">
               <BsWhatsapp className="contact_option-icon" />
               <h4>Whatsapp</h4>
               <h5>jayesh Pandav</h5>
-              <a
-              className="send"
+              <Link
+                className="send"
                 target="_blank"
                 rel="noreferrer"
-                href="https://api.whatsapp.com/send/?phone=%2B919309110595&text&type=phone_number"
+                to="https://api.whatsapp.com/send/?phone=%2B919309110595&text&type=phone_number"
               >
                 send a message
-              </a>
+              </Link>
             </article>
           </div>
         </div>
       </div>
-      <div className="rightside" >
-
-
-        
-        <form  className="contact-form " ref={form} onSubmit={sendEmail}>
+      <div className="rightside">
+        <form className="contact-form " ref={form} onSubmit={sendEmail}>
           <input
-            type="text" name="name" placeholder="Your Full Name" required
+            type="text"
+            name="name"
+            placeholder="Your Full Name"
+            required
           />
-          <input type="email" name="email" placeholder="Enter Your Email" required
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter Your Email"
+            required
           />
-          <textarea name="message" rows="7" placeholder="your message here"
+          <textarea
+            name="message"
+            rows="7"
+            placeholder="your message here"
           ></textarea>
-          <button className="btn btn-info" type="submit"> Send Message</button>
+          <button className="btn btn-info" type="submit">
+            {" "}
+            Send Message
+          </button>
         </form>
       </div>
-
     </section>
   );
 };
