@@ -1,5 +1,4 @@
-import React from //  useState,useContext, // useEffect,
-// useReducer,
+import React from // useReducer, //  useState,useContext, // useEffect,
 "react";
 import content from "../utils/content";
 // import axios from "axios";
@@ -29,7 +28,7 @@ const Crops = () => {
   //   // const getData = async () => {
   //   //   try {
   //   //     const { data } =
-  //   //       // await axios.get("http://127.0.0.1:5000/api/cropprice");
+  //   //       // await axios.get("https://127.0.0.1:5000/api/cropprice");
   //   //       // console.log(data)
   //   //       dispatch({ type: "SET_DATA", payload: data });
   //   //   } catch (err) {

@@ -82,7 +82,7 @@ const CropPred = () => {
     };
 
     axios
-      .post("http://cultivo.pythonanywhere.com/predict", data)
+      .post("https://cultivo.pythonanywhere.com/predict", data)
       .then((response) => {
         dispatch({ type: "SET_DATA", payload: response.data });
       })

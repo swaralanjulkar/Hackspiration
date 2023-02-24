@@ -1,14 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.38c4fbad.css",
-    "main.js": "/static/js/main.4af9131f.js",
+    "main.js": "/static/js/main.d796f8d8.js",
     "static/media/fertibag.png": "/static/media/fertibag.b8523c40a28c7ee13354.png",
     "static/media/Untitled design.png": "/static/media/Untitled design.7cc4893cc5ca37a6e235.png",
     "static/media/cropbag.png": "/static/media/cropbag.9fbfcc47c8ba02752939.png",
     "static/media/final logo.png": "/static/media/final logo.7adc3535292c7d581748.png",
     "static/media/Gov-img.jpg": "/static/media/Gov-img.0626845a25628d725e86.jpg",
     "static/media/freti-img.jpg": "/static/media/freti-img.1748d7b547eac365e5c1.jpg",
-    "static/media/dis-img.jpg": "/static/media/dis-img.9d307e0362ef3a783d70.jpg",
     "static/media/analy-img.webp": "/static/media/analy-img.63b59a387780037e1122.webp",
     "static/media/crop-img.webp": "/static/media/crop-img.99382e2df4753958ac9e.webp",
     "static/media/sesamum.jpeg": "/static/media/sesamum.465dc133f3e5c32ae4e3.jpeg",
@@ -28,10 +27,10 @@
     "static/media/sunflower.jpeg": "/static/media/sunflower.662c7b7c8e851d75975a.jpeg",
     "index.html": "/index.html",
     "main.38c4fbad.css.map": "/static/css/main.38c4fbad.css.map",
-    "main.4af9131f.js.map": "/static/js/main.4af9131f.js.map"
+    "main.d796f8d8.js.map": "/static/js/main.d796f8d8.js.map"
   },
   "entrypoints": [
     "static/css/main.38c4fbad.css",
-    "static/js/main.4af9131f.js"
+    "static/js/main.d796f8d8.js"
   ]
 }

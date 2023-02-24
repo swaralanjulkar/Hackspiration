@@ -66,7 +66,7 @@ const FertilizerPred = () => {
     };
 
     axios
-      .post("http://cultivo.pythonanywhere.com/predictf", data)
+      .post("https://cultivo.pythonanywhere.com/predictf", data)
       .then((response) => {
         dispatch({ type: "SET_DATA", payload: response.data });
       })
