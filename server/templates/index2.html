@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<h3><br>{{prediction_text}}</h3>
+{% set found_odd = False %}
+{% for test in alltest %}
+  {% if test.title == prediction_text and found_odd == False %}
+     <h3>{{ test.title }}</h3>
+     <h3>{{ test.desc }}</h3>
+     {%  set found_odd = True %}
+  {% endif %}
+{% endfor %}
+</body>
+</html>
