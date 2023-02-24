@@ -247,11 +247,8 @@ const CropPred = () => {
           <div>{state.data.context.description}</div>
           <div>
             {" "}
-            <img src={state.data.context.name} alt="" />
+            <img src={state.data.context.img} alt="" />
           </div>
-          {/* <AlternativeCrops data={state.data.context.main} />
-            <h4 className='my-10 font-Inria'>Alternative Suitable Crops</h4>
-            <AlternativeCrops data={state.data.context.alternative} /> */}
         </div>
       )}
     </>

@@ -3,24 +3,6 @@ import React, { useReducer, useState } from "react";
 // import LoadingBox from "../components/LoadingBox";
 import "./styles/fertilizer.css";
 
-// const watermelon =
-//   "https://drive.google.com/uc?export=view&id=1PnS3BJhRNrkvDxrxyG-uKZWpBC6x1VL6";
-
-const f102626 =
-  "https://drive.google.com/uc?export=view&id=1UxugqQIf3rngWKdxIzVX99iqKEJEf3Gi";
-const f143514 =
-  "https://drive.google.com/uc?export=view&id=101ErFPecO0VhHQooUI3cb-lX4T9WiaEr";
-const f171717 =
-  "https://drive.google.com/uc?export=view&id=1ZL1uQLZSkGqiiOQ3nYj0fzQQ2OjqWfg";
-const f2020 =
-  "https://drive.google.com/uc?export=view&id=1vYXYmtESXoygVosXwxqQjOxa0m7ISCoa";
-const f2828 =
-  "https://drive.google.com/uc?export=view&id=1bdsU8QLCBwK2L9Rr_6102RhXwUqclXlG";
-const DAP =
-  "https://drive.google.com/uc?export=view&id=11TUhBGVmfGOCvG_UuJ08w36-Ho1Gxei6";
-const Urea =
-  "https://drive.google.com/uc?export=view&id=1u31aUHmSUxTlEEH6jhlC0QBbS67--jQb";
-
 const dataReducer = (state, action) => {
   switch (action.type) {
     case "SET_DATA":
@@ -38,16 +20,6 @@ const FertilizerPred = () => {
   const [N, setN] = useState(null);
   const [K, setK] = useState(null);
   const [P, setP] = useState(null);
-
-  //   const [crop_array, setCrop_array] = useState([
-  //     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-  //   ]);
-  //   const [soil_array, setSoil_array] = useState([0, 0, 0, 0, 0]);
-
-  // const [crop_array, setCrop_array] = useState([
-  //   0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0,
-  // ]);
-  // const [soil_array, setSoil_array] = useState([0, 0, 1, 0, 0]);
 
   const crop_array = [
     "barley",
@@ -89,28 +61,9 @@ const FertilizerPred = () => {
       N: N,
       K: K,
       P: P,
-      //   black: black,
-      //   clayey: clayey,
-      //   loamy: loamy,
-      //   red: red,
-      //   sandy: sandy,
-      //   barley: barley,
-      //   cotton: cotton,
-      //   groundnut: groundnut,
-      //   maize: maize,
-      //   millet: millet,
-      //   oilseeds: oilseeds,
-      //   paddy: paddy,
-      //   pulses: pulses,
-      //   sugarcane: sugarcane,
-      //   tobacco: tobacco,
-      //   wheat: wheat,
       soil_type: soilSelection,
       crop_name: cropSelection,
     };
-
-    // const [soil_array, setSoil_array] = useState([]);
-    // const [crop_array, setCrop_array] = useState([]);
 
     axios
       .post("http://127.0.0.1:5000/predictf", data)
@@ -121,12 +74,6 @@ const FertilizerPred = () => {
         console.log(error);
       });
   }
-
-  // console.log(state.data);
-
-  //   let soil_array = [0, 0, 0, 0, 0];
-
-  //   let crop_array = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
   return (
     <>
@@ -247,35 +194,6 @@ const FertilizerPred = () => {
 
           <div class="row">
             <div class="col">
-              {/* <label for="Soil-type " class="form-label">
-                Soil-type
-              </label>
-              <select
-                id="inputState"
-                for="soil-type"
-                class="form-control"
-                onChange={(e) => {
-                  handleSoil(e.target.value);
-                }}
-              >
-                <option selected>Choose...</option>
-                <option name="soilBlack" value={0}>
-                  Black
-                </option>
-                <option name="soilClayey" value={1}>
-                  Clayey
-                </option>
-                <option name="soilLoamy" value={2}>
-                  Loamy
-                </option>
-                <option name="soilRed" value={3}>
-                  Red
-                </option>
-                <option name="soilSandy" value={4}>
-                  Sandy
-                </option>
-              </select> */}
-
               <label htmlFor="crop">Select Crop:</label>
               <select
                 name="crop"
@@ -292,31 +210,6 @@ const FertilizerPred = () => {
             </div>
 
             <div class="col">
-              {/* <label for="Crop-type" class="form-label">
-                Crop-type
-              </label>
-              <select
-                id="inputState"
-                for="crop-type"
-                class="form-control"
-                onChange={(e) => {
-                  handleCrop(e.target.value);
-                }}
-              >
-                <option selected>Choose...</option>
-                <option value={0}>Barley</option>
-                <option value={1}>Cotton</option>
-                <option value={2}>Ground-Nut</option>
-                <option value={3}>Maize</option>
-                <option value={4}>Millet</option>
-                <option value={5}>Oil-seeds</option>
-                <option value={6}>Paddy</option>
-                <option value={7}>Pulses</option>
-                <option value={8}>Sugarcane</option>
-                <option value={9}>Tabacco</option>
-                <option value={10}>Wheat</option>
-              </select> */}
-
               <label htmlFor="soil">Select Soil Type:</label>
               <select
                 name="soil"
@@ -349,11 +242,8 @@ const FertilizerPred = () => {
           <div>{state.data[0].description}</div>
           <div>
             {" "}
-            <img src={state.data[0].name} alt="" />
+            <img src={state.data[0].img} alt="" />
           </div>
-          {/* <AlternativeCrops data={state.data.context.main} />
-            <h4 className='my-10 font-Inria'>Alternative Suitable Crops</h4>
-            <AlternativeCrops data={state.data.context.alternative} /> */}
         </div>
       )}
     </>

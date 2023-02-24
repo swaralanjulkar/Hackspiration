@@ -35,7 +35,7 @@ const CropPrice = () => {
     getData();
   }, [crop]);
   return (
-    <div className="md:container my-10">
+    <div className="md:container my-10" style={{ marginTop: "5rem" }}>
       {state.data ? (
         <div className="">
           <div className="">
