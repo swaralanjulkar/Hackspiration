@@ -66,7 +66,7 @@ const FertilizerPred = () => {
     };
 
     axios
-      .post("http://127.0.0.1:5000/predictf", data)
+      .post("http://cultivo.pythonanywhere.com/predictf", data)
       .then((response) => {
         dispatch({ type: "SET_DATA", payload: response.data });
       })
@@ -77,7 +77,8 @@ const FertilizerPred = () => {
 
   return (
     <>
-      <section class="form-container shadow-lg ">
+    <div className="form-bag"  >
+      <div class="form-container shadow-lg ">
         <div class="strip shadow-lg">
           <div>
             {" "}
@@ -194,8 +195,9 @@ const FertilizerPred = () => {
 
           <div class="row">
             <div class="col">
-              <label htmlFor="crop">Select Crop:</label>
+              <label class="form-label" htmlFor="crop">Select Crop:</label>
               <select
+                 class="form-control"
                 name="crop"
                 id="crop"
                 onChange={(e) => handleCropChange(e.target.value)}
@@ -210,8 +212,9 @@ const FertilizerPred = () => {
             </div>
 
             <div class="col">
-              <label htmlFor="soil">Select Soil Type:</label>
+              <label class="form-label" htmlFor="soil">Select Soil Type:</label>
               <select
+               class="form-control"
                 name="soil"
                 id="soil"
                 onChange={(e) => handleSoilChange(e.target.value)}
@@ -234,18 +237,44 @@ const FertilizerPred = () => {
             Predict
           </button>
         </form>
-      </section>
+      </div>
+      </div>
+
+
+
       {state.data && (
-        <div className="mx-8">
-          <h4 className="my-10 font-Inria">Predicted Fertilizer</h4>
-          <div>{state.data[0].name}</div>
-          <div>{state.data[0].description}</div>
-          <div>
-            {" "}
-            <img src={state.data[0].img} alt="" />
+        // <div className="mx-8">
+        //   <h4 className="my-10 font-Inria">Predicted Fertilizer</h4>
+        //   <div>{state.data[0].name}</div>
+        //   <div>{state.data[0].description}</div>
+        //   <div>
+        //     {" "}
+        //     <img src={state.data[0].img} alt="" />
+        //   </div>
+        // </div>
+        <section class="output-section">
+          <div class="output-image shadow-lg" >
+            <img class="out-img  " src={state.data[0].img} alt="" />
           </div>
-        </div>
+
+          <div class="output-des">
+            <div class="output-Heading">
+              Your Soil needs <strong>{state.data[0].name}</strong>
+            </div>
+
+            <div class="desciption text-center">
+              {state.data[0].description}
+            </div>
+          </div>
+
+        </section>
+
+
       )}
+
+
+
+
     </>
   );
 };

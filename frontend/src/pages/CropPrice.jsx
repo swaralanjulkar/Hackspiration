@@ -23,7 +23,7 @@ const CropPrice = () => {
     const getData = async () => {
       try {
         const { data } = await axios.get(
-          `http://127.0.0.1:5000/forecast/${crop}`
+          `http://cultivo.pythonanywhere.com/forecast/${crop}`
         );
         // console.log(data)
         dispatch({ type: "SET_DATA", payload: data });

@@ -54,7 +54,7 @@ const Weather = () => {
       {weatherData && (
         <MDBContainer
           className="w-100 mr-0"
-          style={{ position: "absolute", right: "5vw" }}
+          style={{ position: "absolute", right: "5vw",zIndex:"200" }}
         >
           {/* <MDBRow
           className="justify-content-center align-items-center h-100"
@@ -64,10 +64,10 @@ const Weather = () => {
           <MDBCard
             className="mb-4 gradient-custom"
             style={{
-              borderRadius: "25px",
+            
               backgroundColor: "transparent",
-              border: "none",
-              width: "50%",
+              border:"none",
+              width: "40%",
               marginLeft: "auto",
             }}
           >
@@ -82,11 +82,7 @@ const Weather = () => {
                   </p>
                 </div>
                 <div>
-                  <img
-                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu3.webp"
-                    width="150px"
-                    alt=""
-                  />
+                  
                 </div>
               </div>
             </MDBCardBody>

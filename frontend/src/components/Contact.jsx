@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 import emailjs from "@emailjs/browser";
 import "./styles/contact.css";
-import { AiOutlineMail } from "react-icons/ai";
-import { RiMessengerLine } from "react-icons/ri";
-import { BsWhatsapp } from "react-icons/bs";
+import { AiFillMail } from "react-icons/ai";
+import { RiInstagramFill } from "react-icons/ri";
+import { BsLinkedin, BsTwitter } from "react-icons/bs";
 
 const Contact = () => {
   const form = useRef();
@@ -24,45 +24,60 @@ const Contact = () => {
   return (
     <section id="contact">
       <div className="leftside">
-        <h5>Get In Touch</h5>
-        <h2>Contact</h2>
+        <h4>GET IN TOUCH</h4>
+        <h1>CONTACT</h1>
         <div className="container contact_container">
           <div className="contact_options">
             <article className="contact_option">
-              <AiOutlineMail className="contact_option-icon" />
+              <AiFillMail className="contact_option-icon" />
               <h4>Email</h4>
-              <h5>jayeshpandav02@gmail.com</h5>
+              <h5>cultivo4321@gmail.com
+</h5>
               <Link
                 className="send"
                 target="_blank"
                 rel="noreferrer"
-                to="mailto:jayeshpandav02@gmail.com"
+                to="mailto:cultivo4321@gmail.com
+                "
               >
                 send a message
               </Link>
             </article>
             <article className="contact_option">
-              <RiMessengerLine className="contact_option-icon" />
+              <RiInstagramFill className="contact_option-icon" />
               <h4>Messenger</h4>
-              <h5>jayesh Pandav</h5>
+              <h5>Cultivo Group</h5>
               <Link
                 className="send"
                 target="_blank"
                 rel="noreferrer"
-                to="https://m.me/profile.php?id=100075522804942"
+                to="https://www.instagram.com/cultivo_codeclan/"
               >
                 send a message
               </Link>
             </article>
             <article className="contact_option">
-              <BsWhatsapp className="contact_option-icon" />
-              <h4>Whatsapp</h4>
-              <h5>jayesh Pandav</h5>
+              <BsLinkedin className="contact_option-icon" />
+              <h4>Linkdin</h4>
+              <h5>Cultivo Group</h5>
               <Link
                 className="send"
                 target="_blank"
                 rel="noreferrer"
-                to="https://api.whatsapp.com/send/?phone=%2B919309110595&text&type=phone_number"
+                to="https://www.linkedin.com/mwlite/in/cultivo-grp-8a4673267"
+              >
+                send a message
+              </Link>
+            </article>
+            <article className="contact_option">
+              <BsTwitter className="contact_option-icon" />
+              <h4>Twitter</h4>
+              <h5>Cultivo Group</h5>
+              <Link
+                className="send"
+                target="_blank"
+                rel="noreferrer"
+                to="https://twitter.com/Cultivo_cc?t=w-ib-I-Hn2kt-4SpobjNaw&s=09"
               >
                 send a message
               </Link>

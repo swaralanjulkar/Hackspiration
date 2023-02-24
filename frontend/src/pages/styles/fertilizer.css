@@ -1,0 +1,129 @@
+ /* form style  */
+
+
+ .form-bag{
+    background-image: url(../../components/images/fertibag.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100vw;
+    height:85vh ;
+    padding-top: 10vh;
+    margin-top: 10vh;;
+    
+
+ }
+ .form-container {
+    display: grid;
+    grid-template-rows: 10% 90%;
+    height: 65vh;
+    width: 60vw;
+
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#fff3cd96;
+    border-radius: 10px;
+
+
+}
+
+.form-structure {
+    
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 5%;
+}
+
+.form-row {
+    margin: 20px 0px;
+}
+
+.strip {
+    background-color:#fff3cdf0;
+    border-radius: 4px;
+    width: 100%;
+    margin:0px auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+.strip h2{
+    font-family: 'Tilt Warp', cursive;;
+}
+
+
+
+.Predict {
+    margin-top: 15px;
+}
+
+.form-label {
+    margin-top: 10px;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+
+ /* output */
+        
+ .output-section{
+    display: grid;
+    grid-template-columns: 28% 68%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    height: 60vh;
+
+}
+.output-des{
+    display: grid;
+    grid-template-rows: 10% 90%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.out-img{
+    height: 100%;
+    width:  100%;
+    border-radius: 30px;
+    
+}
+.out-img:hover{
+    cursor: pointer;
+    
+}
+.output-image{
+    border-radius: 30px;
+}
+
+
+.output-Heading{
+    margin: 10px  auto 20px auto;
+    font-size: 2rem;
+}
+
+@media (max-width:750px) {
+    
+    .output-section{
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+
+    }
+    .out-img{
+    height: 100%;
+    width:  100%
+}
+
+.output-Heading{
+    margin: 5px  auto 10px auto;     
+}
+
+
+}
+
+/* output end */

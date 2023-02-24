@@ -98,7 +98,7 @@ const Crops = () => {
                   margin: "10px auto",
                 }}
               />
-              <h6 className="text-center nav-link">{content.name}</h6>
+              <h6 className="text-center ">{content.name}</h6>
             </Link>
           </div>
         ))}

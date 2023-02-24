@@ -82,7 +82,7 @@ const CropPred = () => {
     };
 
     axios
-      .post("http://127.0.0.1:5000/predict", data)
+      .post("http://cultivo.pythonanywhere.com/predict", data)
       .then((response) => {
         dispatch({ type: "SET_DATA", payload: response.data });
       })
@@ -93,11 +93,12 @@ const CropPred = () => {
 
   return (
     <>
-      <section className="form-container shadow-lg ">
+    <div className="form-bag">
+      <div className="form-container shadow-lg ">
         <div className="strip shadow-lg">
           <div>
             {" "}
-            <h2>Crop Prediction</h2>
+            <h2>CROP PREDICTION</h2>
           </div>
         </div>
         <form className="form-structure " onSubmit={submitHandler}>
@@ -223,7 +224,7 @@ const CropPred = () => {
                 <input
                   type="number"
                   id="Nitrogen"
-                  className="form-control"
+                  className="form-control rainfall"
                   placeholder=" in Millimeter"
                   name="rainfall"
                   onChange={(e) => setRainfall(e.target.value)}
@@ -239,17 +240,38 @@ const CropPred = () => {
             Predict
           </button>
         </form>
-      </section>
-      {state.data && (
-        <div className="mx-8">
-          <h4 className="my-10 font-Inria">Main Suitable Crop</h4>
-          <div>{state.data.context.name}</div>
-          <div>{state.data.context.description}</div>
-          <div>
-            {" "}
-            <img src={state.data.context.img} alt="" />
-          </div>
-        </div>
+      </div>
+     
+     </div>
+     
+     
+     
+      {
+      state.data &&
+       (
+        
+        
+        
+
+
+ <section class="output-section">
+<div class="output-image shadow-lg" >
+    <img class="out-img  " src={state.data.context.img} alt=""/>
+</div>
+
+ <div class="output-des">
+     <div class="output-Heading">
+       Dear Farmking! Your Predicted Crop is <strong>{state.data.context.name}</strong>
+     </div>
+
+     <div class="desciption text-center">
+        {state.data.context.description}
+     </div>
+ </div>
+
+</section> 
+
+
       )}
     </>
   );

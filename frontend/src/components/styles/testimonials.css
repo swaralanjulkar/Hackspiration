@@ -1,10 +1,8 @@
-.testi{
+/* .testi{
    
     border: 1px solid lightgray ;
-    margin: 35px 55px;
+    margin: 10px 5px;
     border-radius: 25px;
-    background-color: #a3cfbb4d;
-
     
 
 }
@@ -22,27 +20,71 @@
     margin-top: 20px;
     margin-bottom: 20px;
     height: 120vh;
-    background-color: #a3cfbb30;
-    border-radius: 5px;
 }
 
 .testimonial-heading{
  margin-top: 20px;
-}
-
-.testimonial-heading h3{
-    font-family:'Lobster', cursive;
-    font-weight: 600;
 
 }
 
-@media(max-width:900px){
-    .main-Testimonial{
-        height: 100vh;
-    }
-}
+
+
 @media(max-width:750px){
     .main-Testimonial{
-        height: 160vh;
+        height: 220vh;
     }
+} */
+
+
+.Why-use{
+    height: 90vh;
+    width: 100vw;
+    margin-top: 10vh ;
+    margin-bottom: 20vh;
+}
+
+.why-block{
+    display:grid;
+    grid-template-columns:35% 25% 25%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.titlepage{
+ display: flex;
+ flex-direction: column;
+
+}
+.titlepage p {
+    margin-top: 30px;
+    font-family: "Rajdhani",cursive;
+    font-weight: 600;
+    font-size: 18px;
+    
+}
+.titlepage h2{
+     font-size: 48px;
+  color: gray;
+  font-family: 'Tilt Warp', cursive;
+}
+
+.why-block-next{
+    display:grid;
+    grid-template-columns: 25% 25% 35%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.lar,.sma,.titlepage{
+    margin:20px;
+}
+.lar img{
+    height:250px ;
+    width:300px ;
+}
+.sma img{
+    height:200px ;
+    width:150px ;
 }

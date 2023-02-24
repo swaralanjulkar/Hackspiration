@@ -10,105 +10,97 @@ import { Link } from "react-router-dom";
 const Services = () => {
   return (
     <>
-      <section className="Our-Services shadow-lg">
-        <h2>Our Services</h2>
+      <section className="Our-Services shadow">
+       <div class="Heading-services">
+       <h3>What We Do</h3>
+        <h1>SERVICES WE OFFER</h1>
+       </div>
         <div className="Service-block">
           <div className="card  shadow-lg">
-            <img className="card-img-top" src={anly} alt="Card image cap"></img>
+            <img className="card-img-top" src={anly} alt="Card image cap"/>
             <div className="card-body">
               <h5>Crop Analytics</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                "A smarter way to grow: Forecast, plan, and reap rewards!"
               </p>
               <button
                 type="submit"
                 htmlFor="submit"
                 class="btn btn-dark btn-block Show"
               >
-                Show More
+                <Link style={{textDecoration:"none" ,color:"white"}}
+                  // target="_blank"
+                  to="/priceforecast"
+                >
+                  Show More
+                </Link>
               </button>
             </div>
           </div>
-          <div className="card  shadow-lg middle">
+          <div className="card  shadow-lg">
             <img
               className="card-img-top "
               src={ferti}
               alt="Card image cap"
-            ></img>
+            />
             <div className="card-body">
               <h5>Fertilizer Prediction</h5>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              "Grow your success with precision fertilizer prediction."
               </p>
               <button
                 type="submit"
                 htmlFor="submit"
                 class="btn btn-dark btn-block Show"
               >
-                Show More
+                 <Link style={{textDecoration:"none" ,color:"white"}}
+                  // target="_blank"
+                  to="/fertilizerPred"
+                >
+                  Show More
+                </Link>
               </button>
             </div>
           </div>
           {/* <Link to="/CropPred"> */}
-          <div className="card shadow-lg middle">
+          <div className="card shadow-lg ">
             <img
               className="card-img-top"
               src={cropImg}
               alt="Card image cap"
-            ></img>
+            />
             <div className="card-body">
               <h5>Crop Prediction</h5>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                "The power to predict your harvest is just a click away"
               </p>
               <button
                 type="submit"
                 htmlFor="submit"
                 className="btn btn-dark btn-block Show"
               >
-                Show More
+                <Link style={{textDecoration:"none" ,color:"white"}}
+                  // target="_blank"
+                  to="/CropPred"
+                >
+                  Show More
+                </Link>
               </button>
             </div>
           </div>
-          {/* </Link> */}
-          {/* <div class="card shadow-lg">
-            <img
-              className="card-img-top"
-              src={disImg}
-              alt="Card image cap"
-            ></img>
-            <div className="card-body">
-              <h5>Disease Prediction</h5>
-              <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <button
-                type="submit"
-                htmlFor="submit"
-                class="btn btn-dark btn-block Show"
-              >
-                Show More
-              </button>
-            </div>
-          </div> */}
           <div className="card shadow-lg">
-            <img className="card-img-top" src={gov} alt="Card image cap"></img>
+            <img className="card-img-top" src={gov} alt="Card image cap"/>
             <div className="card-body">
               <h5>Government Schemes</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                "Explore the Schemes Offered by Government."
               </p>
               <button
                 type="submit"
                 htmlFor="submit"
                 className="btn btn-dark btn-block Show"
               >
-                <Link
+                <Link style={{textDecoration:"none" ,color:"white"}}
                   target="_blank"
                   to="https://agricoop.nic.in/en/Acts#gsc.tab=0"
                 >

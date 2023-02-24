@@ -1,6 +1,7 @@
 .navbar{
-    background-color:#20c99796;
+    background-color:#5b3204bf;
     width: 100vw;
+    height: 10vh;
 }
  .container-fluid{
        margin: 0px 3%;
@@ -20,5 +21,11 @@
 .nav-link{
     font-family: 'Patrick Hand', cursive;
     font-size:1.3rem ;
-    color: black;
+    color: white;
+}
+
+.logo{
+    height: 60px;
+    width: 100px;
+    
 }

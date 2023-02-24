@@ -1,5 +1,6 @@
 import React from "react";
 import './styles/testimonials.css'
+import testimg from './images/crop-img.webp'
 // import {
 //   MDBCard,
 //   MDBCardBody,
@@ -164,60 +165,59 @@ const Testimonials = () => {
     </MDBContainer> */}
      
 
-     <section className="main-Testimonial shadow-lg" >
-  <div className="row d-flex justify-content-center testimonial-heading">
-    <div className="col-md-10 col-xl-8 text-center">
-      <h3 className="mb-4 mt-465">Testimonials</h3>
-      <p className="mb-4 pb-2 mb-md-5 pb-md-0">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
-        numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
-        quisquam eum porro a pariatur veniam.
-      </p>
-    </div>
-  </div>
+     <section className=" Why-use shadow" >
+ 
+         <div class="why-block">
+           
+               
+                  <div class="titlepage ">
+                     
+                     <h2>WHY CULTIVO</h2>
+                     <p>Agriculture and associated sectors account for roughly 18 percent of India's Gross Value Added (GVA). A large-scale, ill-informed decision by farmers could have a severe impact on the entire economy of a region. We ought to build a system that can provide Indian farmers with predictive insights, allowing them to make better decisions about which crops to produce.In most circumstances, a farmer's decision on which crop to cultivate is impacted by his intuition as well as other irrelevant aspects.</p>
+            
+                  </div>
+               
+               
+                 
+                     <div class="lar">
+                        <figure><img src={testimg} alt="#"/>
+                        </figure>
+                     </div>
+                  
+                     <div class="sma">
+                        <figure><img src={testimg}  alt="#"/>
+                        </figure>
+                     </div>
+                  
+               
+               </div>
+        <div class="why-block-next">
+           
+               
+        
+              <div class="sma">
+                 <figure><img src={testimg}  alt="#"/>
+                 </figure>
+              </div>
+          
+              <div class="lar">
+                 <figure><img src={testimg}  alt="#"/>
+                 </figure>
+              </div>
+           
+           
+        
+           <div class="titlepage ">
+              
+              
+              <p>Agriculture and associated sectors account for roughly 18 percent of India's Gross Value Added (GVA). A large-scale, ill-informed decision by farmers could have a severe impact on the entire economy of a region. We ought to build a system that can provide Indian farmers with predictive insights, allowing them to make better decisions about which crops to produce.In most circumstances, a farmer's decision on which crop to cultivate is impacted by his intuition as well as other irrelevant aspects.</p>
+     
+           </div>
+        
+        </div>
+        
+     
 
-  <div className="row text-center all-Cards">
-    <div className="col-md-4 mb-5 mb-md-0  testi shadow">
-      <div className="d-flex justify-content-center mb-4">
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
-          className="rounded-circle shadow-1-strong" width="150" height="150" />
-      </div>
-      <h5 className="mb-3">Maria Smantha</h5>
-      <h6 className=" mb-3">Web Developer</h6>
-      <p className="px-xl-3">
-        <i className="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
-        tenetur.
-      </p>
-      
-    </div>
-    <div className="col-md-4 mb-5 mb-md-0 testi shadow">
-      <div className="d-flex justify-content-center mb-4">
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
-          className="rounded-circle shadow-1-strong" width="150" height="150" />
-      </div>
-      <h5 className="mb-3">Lisa Cudrow</h5>
-      <h6 className=" mb-3">Graphic Designer</h6>
-      <p className="px-xl-3">
-        <i className="fas fa-quote-left pe-2"></i>Ut enim ad minima veniam, quis nostrum
-        exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.
-      </p>
-     
-    </div>
-    <div className="col-md-4 mb-0 testi shadow">
-      <div className="d-flex justify-content-center mb-4">
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
-          className="rounded-circle shadow-1-strong" width="150" height="150" />
-      </div>
-      <h5 className="mb-3">John Smith</h5>
-      <h6 className=" mb-3">Marketing Specialist</h6>
-      <p className="px-xl-3">
-        <i className="fas fa-quote-left pe-2"></i>At vero eos et accusamus et iusto odio
-        dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
-      </p>
-     
-    </div>
-  </div>
 </section>
 
 
