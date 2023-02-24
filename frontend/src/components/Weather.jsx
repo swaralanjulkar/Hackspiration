@@ -24,8 +24,8 @@ const Weather = () => {
         console.log("Longitude is:", lon);
       });
 
-      // const API_key = '43ecf2c26620fb2a1cd71000ada8ffd6';
-      const API_key = process.env.REACT_APP_API_KEY;
+      const API_key = "43ecf2c26620fb2a1cd71000ada8ffd6";
+      // const API_key = process.env.REACT_APP_API_KEY;
 
       const todayurl = `https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${lon}&units=metric&APPID=${API_key}`;
 
@@ -54,7 +54,7 @@ const Weather = () => {
       {weatherData && (
         <MDBContainer
           className="w-100 mr-0"
-          style={{ position: "absolute", right: "5vw",zIndex:"200" }}
+          style={{ position: "absolute", right: "5vw", zIndex: "200" }}
         >
           {/* <MDBRow
           className="justify-content-center align-items-center h-100"
@@ -64,9 +64,8 @@ const Weather = () => {
           <MDBCard
             className="mb-4 gradient-custom"
             style={{
-            
               backgroundColor: "transparent",
-              border:"none",
+              border: "none",
               width: "40%",
               marginLeft: "auto",
             }}
@@ -81,9 +80,7 @@ const Weather = () => {
                     {weatherData.name}, {weatherData.sys.country}
                   </p>
                 </div>
-                <div>
-                  
-                </div>
+                <div></div>
               </div>
             </MDBCardBody>
           </MDBCard>
