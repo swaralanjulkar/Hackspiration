@@ -1,10 +1,8 @@
-import React, {
-  useEffect,
-  //  useState,useContext,
-  useReducer,
-} from "react";
+import React from //  useState,useContext, // useEffect,
+// useReducer,
+"react";
 import content from "../utils/content";
-import axios from "axios";
+// import axios from "axios";
 // import Top5 from '../components/Top5';
 // import Bottom5 from '../components/Bottom5';
 // import Sixmonths from '../components/Sixmonths';
@@ -13,14 +11,14 @@ import { Link } from "react-router-dom";
 
 // const DataContext = React.createContext()
 
-const dataReducer = (state, action) => {
-  switch (action.type) {
-    case "SET_DATA":
-      return { ...state, data: action.payload };
-    default:
-      return state;
-  }
-};
+// const dataReducer = (state, action) => {
+//   switch (action.type) {
+//     case "SET_DATA":
+//       return { ...state, data: action.payload };
+//     default:
+//       return state;
+//   }
+// };
 
 const Crops = () => {
   const { Crops } = content;

@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import OurTeam from "../pages/OurTeam";
+// import { Link } from "react-router-dom";
+// import OurTeam from "../pages/OurTeam";
 import "./styles/footer.css";
 
 const FooterCom = () => {

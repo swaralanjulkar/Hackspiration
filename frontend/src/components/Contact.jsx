@@ -31,8 +31,7 @@ const Contact = () => {
             <article className="contact_option">
               <AiFillMail className="contact_option-icon" />
               <h4>Email</h4>
-              <h5>cultivo4321@gmail.com
-</h5>
+              <h5>cultivo4321@gmail.com</h5>
               <Link
                 className="send"
                 target="_blank"
@@ -45,7 +44,7 @@ const Contact = () => {
             </article>
             <article className="contact_option">
               <RiInstagramFill className="contact_option-icon" />
-              <h4>Messenger</h4>
+              <h4>Instagram</h4>
               <h5>Cultivo Group</h5>
               <Link
                 className="send"

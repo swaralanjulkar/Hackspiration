@@ -1,5 +1,8 @@
 import React, { useEffect, useReducer } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import {
+  //  useNavigate,
+  useParams,
+} from "react-router-dom";
 import axios from "axios";
 import ForecastPlot from "../components/ForecastPlot";
 import LoadingBox from "../components/LoadingBox";
@@ -14,7 +17,7 @@ const dataReducer = (state, action) => {
 };
 
 const CropPrice = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const params = useParams();
   const { crop } = params;
