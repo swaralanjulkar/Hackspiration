@@ -54,7 +54,7 @@ const Weather = () => {
       {weatherData && (
         <MDBContainer
           className="w-100 mr-0"
-          style={{ position: "absolute", right: "5vw", zIndex: "200" }}
+          style={{ position: "absolute", right: "0", top:"3vh", zIndex: "200" }}
         >
           {/* <MDBRow
           className="justify-content-center align-items-center h-100"

@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/navbar.css";
 import { Link } from "react-router-dom";
-import Logo from "./images/final logo.png";
+import Logo from "./images/final_logo-removebg-preview.png";
 
 const Navbar = () => {
   return (
@@ -32,6 +32,11 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link className="nav-link" to="#">
                   Our Services
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="#">
+                  Our Team
                 </Link>
               </li>
               <li className="nav-item">

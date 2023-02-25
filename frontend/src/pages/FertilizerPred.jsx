@@ -77,7 +77,7 @@ const FertilizerPred = () => {
 
   return (
     <>
-      <div className="form-bag">
+      <div className="form-bag_1">
         <div className="form-container shadow-lg ">
           <div className="strip shadow-lg">
             <div>

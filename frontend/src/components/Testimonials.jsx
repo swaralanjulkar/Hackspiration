@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/testimonials.css";
-import testimg from "./images/crop-img.webp";
+import chart from "./images/infographic07_cleanup.jpg";
 // import {
 //   MDBCard,
 //   MDBCardBody,
@@ -171,45 +171,29 @@ const Testimonials = () => {
               Agriculture and associated sectors account for roughly 18 percent
               of India's Gross Value Added (GVA). A large-scale, ill-informed
               decision by farmers could have a severe impact on the entire
-              economy of a region. We ought to build a system that can provide
-              Indian farmers with predictive insights, allowing them to make
-              better decisions about which crops to produce.In most
-              circumstances, a farmer's decision on which crop to cultivate is
-              impacted by his intuition as well as other irrelevant aspects.
+              economy of a region. 
             </p>
           </div>
 
-          <div className="lar">
-            <figure>
-              <img src={testimg} alt="#" />
-            </figure>
+          <div className="lar  shadow-lg">
+           
+              <img src={chart}  className="shadow-lg" alt="#" />
+            
           </div>
 
-          <div className="sma">
-            <figure>
-              <img src={testimg} alt="#" />
-            </figure>
-          </div>
         </div>
         <div className="why-block-next">
-          <div className="sma">
-            <figure>
-              <img src={testimg} alt="#" />
-            </figure>
-          </div>
+          
 
           <div className="lar">
             <figure>
-              <img src={testimg} alt="#" />
+              <img src={chart}  className="shadow-lg"alt="#" />
             </figure>
           </div>
 
           <div className="titlepage ">
             <p>
-              Agriculture and associated sectors account for roughly 18 percent
-              of India's Gross Value Added (GVA). A large-scale, ill-informed
-              decision by farmers could have a severe impact on the entire
-              economy of a region. We ought to build a system that can provide
+            We ought to build a system that can provide
               Indian farmers with predictive insights, allowing them to make
               better decisions about which crops to produce.In most
               circumstances, a farmer's decision on which crop to cultivate is
