@@ -14,6 +14,7 @@ const Weather = () => {
   const [lat, setLat] = useState(0);
   const [lon, setLon] = useState(0);
   const [weatherData, setWeatherData] = useState(null);
+  const [city, setCity] = useState(null)
 
   useEffect(() => {
     const fetchWeatherData = () => {
@@ -31,7 +32,7 @@ const Weather = () => {
 
       console.log(todayurl);
 
-      lat &&
+      lat && city &&
         axios
           .get(
             `https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${lon}&units=metric&APPID=43ecf2c26620fb2a1cd71000ada8ffd6`
@@ -45,16 +46,24 @@ const Weather = () => {
             // handle error
             console.log(error);
           });
+      axios
+        .get(
+          `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lon}&localityLanguage=en`
+        )
+
+        .then((res) => {
+          setCity(res.data.city);
+        });
     };
     fetchWeatherData();
-  }, [lat, lon]);
+  }, [lat, lon, city]);
 
   return (
     <>
       {weatherData && (
         <MDBContainer
           className="w-100 mr-0"
-          style={{ position: "absolute", right: "0", top:"3vh", zIndex: "200" }}
+          style={{ position: "absolute", right: "0", top: "4.5vh", zIndex: "200" }}
         >
           {/* <MDBRow
           className="justify-content-center align-items-center h-100"
@@ -77,7 +86,7 @@ const Weather = () => {
                     <strong>{weatherData.main.temp} °c</strong>
                   </h2>
                   <p className="text-muted mb-0">
-                    {weatherData.name}, {weatherData.sys.country}
+                    {city}, {weatherData.sys.country}
                   </p>
                 </div>
                 <div></div>

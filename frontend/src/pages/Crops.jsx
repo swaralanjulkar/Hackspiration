@@ -1,6 +1,7 @@
 import React from // useReducer, //  useState,useContext, // useEffect,
 "react";
 import content from "../utils/content";
+import "./styles/cropana.css";
 // import axios from "axios";
 // import Top5 from '../components/Top5';
 // import Bottom5 from '../components/Bottom5';
@@ -62,38 +63,39 @@ const Crops = () => {
                 ):<LoadingBox />
             } */}
       <div
-        className=""
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr",
+        className="all-cropblocks"
+        // style={{
+        //   display: "grid",
+        //   gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr",
 
-          alignItems: "center",
-          padding: "30px",
-        }}
+        //   alignItems: "center",
+        //   padding: "30px",
+        // }}
       >
+        
         {Crops.map((content, i) => (
           <div
             key={content.name}
-            className="shadow h-80 
+            className=" crop1 shadow h-80 
                     "
-            style={{
-              margin: "3vw",
-              padding: "10px",
-            }}
+            // style={{
+            //   margin: "3vw",
+            //   padding: "10px",
+            // }}
           >
             <Link
               style={{ display: "flex", flexDirection: "column" }}
               to={`/priceforecast/${content.name.toLowerCase()}`}
             >
-              <img
+              <img 
                 src={content.icon}
                 alt="..."
-                className=" "
-                style={{
-                  height: "95%",
-                  width: "95%",
-                  margin: "10px auto",
-                }}
+                className="crop-pic "
+                // style={{
+                //   height: "95%",
+                //   width: "95%",
+                //   margin: "10px auto",
+                // }}
               />
               <h6 className="text-center ">{content.name}</h6>
             </Link>
