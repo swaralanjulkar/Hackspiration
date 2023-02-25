@@ -42,7 +42,7 @@ const Contact = () => {
                 send a message
               </Link>
             </article>
-            <article className="contact_option">
+            <article className="contact_option" >
               <RiInstagramFill className="contact_option-icon" />
               <h4>Instagram</h4>
               <h5>Cultivo Group</h5>

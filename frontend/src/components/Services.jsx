@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const Services = () => {
   return (
     <>
-      <section className="Our-Services shadow">
+      <section className="Our-Services shadow" id="service-com">
         <div className="Heading-services">
           <h3>What We Do</h3>
           <h1>SERVICES WE OFFER</h1>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/testimonials.css";
 import chart from "./images/infographic07_cleanup.jpg";
+import chart2 from "./images/piccrop.jpg";
 // import {
 //   MDBCard,
 //   MDBCardBody,
@@ -187,7 +188,7 @@ const Testimonials = () => {
 
           <div className="lar">
             <figure>
-              <img src={chart}  className="shadow-lg"alt="#" />
+              <img src={chart2}  className="shadow-lg"alt="#" />
             </figure>
           </div>
 

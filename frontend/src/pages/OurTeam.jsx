@@ -2,6 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 import "./styles/ourteam.css";
+import sw from '../components/images/swaranjali.jpg'
+import jy from '../components/images/jayesh.jpg'
+import ac from '../components/images/ayush.jpg'
+import sm from '../components/images/srujan.jpg'
+import { AiFillLinkedin, AiFillTwitterCircle, AiOutlineMail } from "react-icons/ai";
 
 const OurTeam = () => {
   // const teamDetails = [
@@ -109,15 +114,15 @@ const OurTeam = () => {
 
           <div className="col-lg-6">
             <div className="member shadow-lg d-flex align-items-start">
-              <div className="pic"><img src="assets/img/doctors/doctors-1.jpg" className="img-fluid" alt=""/></div>
+              <div className="pic"><img src={sw} className="img-fluid" alt=""/></div>
               <div className="member-info ">
                 <h4>Swaranjali Lanjulkar</h4>
                 <span>ML Developer</span>
                 <p>PICT SE [IT]</p>
                 <div className="social">
-                  <Link to="https://twitter.com/Swara_Lanjulkar"><i className="bi bi-twitter"></i></Link>
-                  <Link to="mailto:swaranjalilanjulkar2012@gmail.com"><i className="ri-google-fill"></i></Link>
-                  <Link to="https://www.linkedin.com/in/swaranjali-lanjulkar-22548122a/"> <i className="ri-linkedin-box-fill"></i> </Link>
+                  <Link to="https://twitter.com/Swara_Lanjulkar"><i><AiFillTwitterCircle/></i></Link>
+                  <Link to="mailto:swaranjalilanjulkar2012@gmail.com"><i><AiOutlineMail/></i></Link>
+                  <Link to="https://www.linkedin.com/in/swaranjali-lanjulkar-22548122a/"> <i><AiFillLinkedin/></i> </Link>
                 </div>
               </div>
             </div>
@@ -125,15 +130,15 @@ const OurTeam = () => {
 
           <div className="col-lg-6 mt-4 mt-lg-0">
             <div className="member shadow-lg d-flex align-items-start">
-              <div className="pic"><img src="assets/img/doctors/doctors-2.jpg" className="img-fluid" alt=""/></div>
+              <div className="pic"><img src={jy} className="img-fluid" alt=""/></div>
               <div className="member-info">
                 <h4>Jayesh Pandav</h4>
                 <span>Full Stack Web-Developer</span>
                 <p>PICT SE [ENTC]</p>
                 <div className="social">
-                  <Link to="https://twitter.com/JayeshPandav02"><i className="ri-twitter-fill"></i></Link>
-                  <Link to="mailto:jayeshpandav02@gmail.com"><i className="ri-google-fill"></i></Link>
-                  <Link to="https://www.linkedin.com/in/jayesh-pandav-68368922a/"> <i className="ri-linkedin-box-fill"></i> </Link>
+                  <Link to="https://twitter.com/JayeshPandav02"><i className="ri-twitter-fill"><AiFillTwitterCircle/></i></Link>
+                  <Link to="mailto:jayeshpandav02@gmail.com"><i className="ri-google-fill"><AiOutlineMail/></i></Link>
+                  <Link to="https://www.linkedin.com/in/jayesh-pandav-68368922a/"> <i className="ri-linkedin-box-fill"><AiFillLinkedin/></i> </Link>
                 </div>
               </div>
             </div>
@@ -141,15 +146,15 @@ const OurTeam = () => {
 
           <div className="col-lg-6 mt-4">
             <div className="member shadow-lg d-flex align-items-start">
-              <div className="pic"><img src="assets/img/doctors/doctors-3.jpg" className="img-fluid" alt=""/></div>
+              <div className="pic"><img src={ac} className="img-fluid" alt=""/></div>
               <div className="member-info">
                 <h4>Ayush Chopade</h4>
                 <span>Backend Web-Developer</span>
                 <p>PICT SE [IT]</p>
                 <div className="social">
-                <Link to="https://twitter.com/ayusshh_45?t=GUJSOR0MQHe4ziLWD_sTjQ&s=08"><i className="ri-twitter-fill"></i></Link>
-                  <Link to="mailto:ayushchopade45@gmail.com"><i className="ri-google-fill"></i></Link>
-                  <Link to="https://www.linkedin.com/in/ayush-chopade-a04b9a24b"> <i className="ri-linkedin-box-fill"></i> </Link>
+                <Link to="https://twitter.com/ayusshh_45?t=GUJSOR0MQHe4ziLWD_sTjQ&s=08"><i className="ri-twitter-fill"><AiFillTwitterCircle/></i></Link>
+                  <Link to="mailto:ayushchopade45@gmail.com"><i className="ri-google-fill"><AiOutlineMail/></i></Link>
+                  <Link to="https://www.linkedin.com/in/ayush-chopade-a04b9a24b"> <i className="ri-linkedin-box-fill"><AiFillLinkedin/></i> </Link>
                 </div>
               </div>
             </div>
@@ -157,15 +162,15 @@ const OurTeam = () => {
 
           <div className="col-lg-6 mt-4">
             <div className="member shadow-lg d-flex align-items-start">
-              <div className="pic"><img src="assets/img/doctors/doctors-4.jpg" className="img-fluid" alt=""/></div>
+              <div className="pic"><img src={sm} className="img-fluid" alt=""/></div>
               <div className="member-info">
                 <h4>Srujan Mukund</h4>
                 <span>Frontend Web-Developer</span>
                 <p>PICT SE [CE]</p>
                 <div className="social">
-                <Link to="https://twitter.com/SrujanMukund246?t=ze9PxW3E6JouwuEdBTxFuw&s=08"><i className="ri-twitter-fill"></i></Link>
-                  <Link to="mailto:srujanmukund10@gmail.com"><i className="ri-google-fill"></i></Link>
-                  <Link to="https://www.linkedin.com/in/srujan-mukund"> <i className="ri-linkedin-box-fill"></i> </Link>
+                <Link to="https://twitter.com/SrujanMukund246?t=ze9PxW3E6JouwuEdBTxFuw&s=08"><i className="ri-twitter-fill"><AiFillTwitterCircle/></i></Link>
+                  <Link to="mailto:srujanmukund10@gmail.com"><i className="ri-google-fill"><AiOutlineMail/></i></Link>
+                  <Link to="https://www.linkedin.com/in/srujan-mukund"> <i className="ri-linkedin-box-fill"><AiFillLinkedin/></i> </Link>
                 </div>
               </div>
             </div>
