@@ -18,6 +18,9 @@
     display: flex;
     flex-direction: column;
   }
+  .contact_option{
+    width: 75vw;
+  }
 }
 
 
@@ -65,8 +68,9 @@ margin-top: 5vh;
   border-radius: 20px;
   background-color: antiquewhite;
   padding: 20px;
-  width: 18vw;
+  width: 85%;
 }
+
 
 .send {
   text-decoration: none;

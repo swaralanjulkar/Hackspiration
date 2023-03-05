@@ -37,7 +37,7 @@
 
 
 .Why-use{
-    height: 90vh;
+    height: 120vh;
     width: 100vw;
     margin-top: 10vh ;
     margin-bottom: 20vh;
@@ -45,7 +45,7 @@
 
 .why-block{
     display:grid;
-    grid-template-columns:35% 25% 25%;
+    grid-template-columns:55% 30%;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -71,20 +71,37 @@
 
 .why-block-next{
     display:grid;
-    grid-template-columns: 25% 25% 35%;
+    grid-template-columns: 30%  55%;
     justify-content: center;
     align-items: center;
     margin: 20px auto;
 }
 
-.lar,.sma,.titlepage{
+.lar,.titlepage{
     margin:20px;
 }
 .lar img{
-    height:250px ;
-    width:300px ;
+    height: 80%;
+    width:100% ;
+    border-radius: 5px;
 }
-.sma img{
-    height:200px ;
-    width:150px ;
+
+
+@media(max-width:900px){
+    .Why-use{
+        height: 135vh;
+    }
 }
+
+@media(max-width:750px){
+    .Why-use{
+        height: 135vh;
+    }
+}
+
+@media(max-width:600px){
+    .Why-use{
+        height: 135vh;
+    }
+}
+

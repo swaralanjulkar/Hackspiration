@@ -1,10 +1,10 @@
 .navbar{
-    background-color:#5b3204bf;
+    background-color:#5b3204e8;
     width: 100vw;
     height: 10vh;
 }
  .container-fluid{
-       margin: 0px 3%;
+       margin: 0px 2%;
   }
    .navbar-brand{
     font-family: 'Julee', cursive;
@@ -25,7 +25,7 @@
 }
 
 .logo{
-    height: 60px;
-    width: 100px;
+    height: 75px;
+    width: 200px;
     
 }

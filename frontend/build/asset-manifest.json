@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.38c4fbad.css",
+    "main.js": "/static/js/main.d796f8d8.js",
+    "static/media/fertibag.png": "/static/media/fertibag.b8523c40a28c7ee13354.png",
+    "static/media/Untitled design.png": "/static/media/Untitled design.7cc4893cc5ca37a6e235.png",
+    "static/media/cropbag.png": "/static/media/cropbag.9fbfcc47c8ba02752939.png",
+    "static/media/final logo.png": "/static/media/final logo.7adc3535292c7d581748.png",
+    "static/media/Gov-img.jpg": "/static/media/Gov-img.0626845a25628d725e86.jpg",
+    "static/media/freti-img.jpg": "/static/media/freti-img.1748d7b547eac365e5c1.jpg",
+    "static/media/analy-img.webp": "/static/media/analy-img.63b59a387780037e1122.webp",
+    "static/media/crop-img.webp": "/static/media/crop-img.99382e2df4753958ac9e.webp",
+    "static/media/sesamum.jpeg": "/static/media/sesamum.465dc133f3e5c32ae4e3.jpeg",
+    "static/media/ragi.jpeg": "/static/media/ragi.ef40c0d00372d92378be.jpeg",
+    "static/media/wheat.jpeg": "/static/media/wheat.515f812960e8dfb894f9.jpeg",
+    "static/media/bajra.jpeg": "/static/media/bajra.523a5e2a0b1448a069cf.jpeg",
+    "static/media/urad.jpeg": "/static/media/urad.f097571a9ee423df0854.jpeg",
+    "static/media/jowar.jpeg": "/static/media/jowar.9bfd1256b38f5b9f355c.jpeg",
+    "static/media/gram.jpeg": "/static/media/gram.21543a5f60061d490f86.jpeg",
+    "static/media/masoor.jpeg": "/static/media/masoor.fe40fb4d799c3392d878.jpeg",
+    "static/media/jute.jpeg": "/static/media/jute.771a000a7f9264a7abbf.jpeg",
+    "static/media/groundnut.jpeg": "/static/media/groundnut.e12f98827257402e9093.jpeg",
+    "static/media/arhar.jpeg": "/static/media/arhar.8f469cfaba35532419d3.jpeg",
+    "static/media/soyabean.jpeg": "/static/media/soyabean.0fe88337e2a5d0c74fea.jpeg",
+    "static/media/paddy.jpeg": "/static/media/paddy.4d5a0580e29f54e28704.jpeg",
+    "static/media/rape.jpeg": "/static/media/rape.6246c9217e91662b0cd3.jpeg",
+    "static/media/sunflower.jpeg": "/static/media/sunflower.662c7b7c8e851d75975a.jpeg",
+    "index.html": "/index.html",
+    "main.38c4fbad.css.map": "/static/css/main.38c4fbad.css.map",
+    "main.d796f8d8.js.map": "/static/js/main.d796f8d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38c4fbad.css",
+    "static/js/main.d796f8d8.js"
+  ]
+}

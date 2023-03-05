@@ -1,0 +1,25 @@
+.all-cropblocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    align-items: center;
+    padding: 30px;
+}
+
+.crop1{
+    margin: 1.5vw;
+    padding: 10px;
+}
+.crop-pic{
+    height: 95%;
+    width: 95%;
+    margin: 10px auto;
+
+}
+
+@media(max-width:750px){
+   
+    .all-cropblocks{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}

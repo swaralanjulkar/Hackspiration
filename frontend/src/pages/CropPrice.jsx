@@ -1,5 +1,8 @@
 import React, { useEffect, useReducer } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import {
+  //  useNavigate,
+  useParams,
+} from "react-router-dom";
 import axios from "axios";
 import ForecastPlot from "../components/ForecastPlot";
 import LoadingBox from "../components/LoadingBox";
@@ -14,7 +17,7 @@ const dataReducer = (state, action) => {
 };
 
 const CropPrice = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const params = useParams();
   const { crop } = params;
@@ -23,7 +26,7 @@ const CropPrice = () => {
     const getData = async () => {
       try {
         const { data } = await axios.get(
-          `http://cultivo.pythonanywhere.com/forecast/${crop}`
+          `https://cultivo.pythonanywhere.com/forecast/${crop}`
         );
         // console.log(data)
         dispatch({ type: "SET_DATA", payload: data });

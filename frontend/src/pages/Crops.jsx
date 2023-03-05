@@ -1,10 +1,8 @@
-import React, {
-  useEffect,
-  //  useState,useContext,
-  useReducer,
-} from "react";
+import React from // useReducer, //  useState,useContext, // useEffect,
+"react";
 import content from "../utils/content";
-import axios from "axios";
+import "./styles/cropana.css";
+// import axios from "axios";
 // import Top5 from '../components/Top5';
 // import Bottom5 from '../components/Bottom5';
 // import Sixmonths from '../components/Sixmonths';
@@ -13,14 +11,14 @@ import { Link } from "react-router-dom";
 
 // const DataContext = React.createContext()
 
-const dataReducer = (state, action) => {
-  switch (action.type) {
-    case "SET_DATA":
-      return { ...state, data: action.payload };
-    default:
-      return state;
-  }
-};
+// const dataReducer = (state, action) => {
+//   switch (action.type) {
+//     case "SET_DATA":
+//       return { ...state, data: action.payload };
+//     default:
+//       return state;
+//   }
+// };
 
 const Crops = () => {
   const { Crops } = content;
@@ -31,7 +29,7 @@ const Crops = () => {
   //   // const getData = async () => {
   //   //   try {
   //   //     const { data } =
-  //   //       // await axios.get("http://127.0.0.1:5000/api/cropprice");
+  //   //       // await axios.get("https://127.0.0.1:5000/api/cropprice");
   //   //       // console.log(data)
   //   //       dispatch({ type: "SET_DATA", payload: data });
   //   //   } catch (err) {
@@ -65,38 +63,39 @@ const Crops = () => {
                 ):<LoadingBox />
             } */}
       <div
-        className=""
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr",
+        className="all-cropblocks"
+        // style={{
+        //   display: "grid",
+        //   gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr",
 
-          alignItems: "center",
-          padding: "30px",
-        }}
+        //   alignItems: "center",
+        //   padding: "30px",
+        // }}
       >
+        
         {Crops.map((content, i) => (
           <div
             key={content.name}
-            className="shadow h-80 
+            className=" crop1 shadow h-80 
                     "
-            style={{
-              margin: "3vw",
-              padding: "10px",
-            }}
+            // style={{
+            //   margin: "3vw",
+            //   padding: "10px",
+            // }}
           >
             <Link
               style={{ display: "flex", flexDirection: "column" }}
               to={`/priceforecast/${content.name.toLowerCase()}`}
             >
-              <img
+              <img 
                 src={content.icon}
                 alt="..."
-                className=" "
-                style={{
-                  height: "95%",
-                  width: "95%",
-                  margin: "10px auto",
-                }}
+                className="crop-pic "
+                // style={{
+                //   height: "95%",
+                //   width: "95%",
+                //   margin: "10px auto",
+                // }}
               />
               <h6 className="text-center ">{content.name}</h6>
             </Link>

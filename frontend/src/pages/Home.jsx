@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/home.css";
 import Weather from "../components/Weather";
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
@@ -11,7 +11,7 @@ import Contact from "../components/Contact";
 const Home = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Weather />
       <Hero />
       <Services />

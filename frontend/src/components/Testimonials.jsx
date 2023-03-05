@@ -1,6 +1,7 @@
 import React from "react";
-import './styles/testimonials.css'
-import testimg from './images/crop-img.webp'
+import "./styles/testimonials.css";
+import chart from "./images/infographic07_cleanup.jpg";
+import chart2 from "./images/piccrop.jpg";
 // import {
 //   MDBCard,
 //   MDBCardBody,
@@ -11,11 +12,10 @@ import testimg from './images/crop-img.webp'
 //   MDBTypography,
 // } from "mdb-react-ui-kit";
 
-
 const Testimonials = () => {
   return (
     <>
-    {/* <MDBContainer
+      {/* <MDBContainer
       fluid
       className="py-5"
       style={{ backgroundColor: "#f3f2f2", color: "#000" }}
@@ -163,67 +163,48 @@ const Testimonials = () => {
         </MDBCol>
       </MDBRow>
     </MDBContainer> */}
-     
 
-     <section className=" Why-use shadow" >
- 
-         <div class="why-block">
+      <section className=" Why-use shadow">
+        <div className="why-block">
+          <div className="titlepage ">
+            <h2>WHY CULTIVO</h2>
+            <p>
+              Agriculture and associated sectors account for roughly 18 percent
+              of India's Gross Value Added (GVA). A large-scale, ill-informed
+              decision by farmers could have a severe impact on the entire
+              economy of a region. 
+            </p>
+          </div>
+
+          <div className="lar  shadow-lg">
            
-               
-                  <div class="titlepage ">
-                     
-                     <h2>WHY CULTIVO</h2>
-                     <p>Agriculture and associated sectors account for roughly 18 percent of India's Gross Value Added (GVA). A large-scale, ill-informed decision by farmers could have a severe impact on the entire economy of a region. We ought to build a system that can provide Indian farmers with predictive insights, allowing them to make better decisions about which crops to produce.In most circumstances, a farmer's decision on which crop to cultivate is impacted by his intuition as well as other irrelevant aspects.</p>
+              <img src={chart}  className="shadow-lg" alt="#" />
             
-                  </div>
-               
-               
-                 
-                     <div class="lar">
-                        <figure><img src={testimg} alt="#"/>
-                        </figure>
-                     </div>
-                  
-                     <div class="sma">
-                        <figure><img src={testimg}  alt="#"/>
-                        </figure>
-                     </div>
-                  
-               
-               </div>
-        <div class="why-block-next">
-           
-               
-        
-              <div class="sma">
-                 <figure><img src={testimg}  alt="#"/>
-                 </figure>
-              </div>
-          
-              <div class="lar">
-                 <figure><img src={testimg}  alt="#"/>
-                 </figure>
-              </div>
-           
-           
-        
-           <div class="titlepage ">
-              
-              
-              <p>Agriculture and associated sectors account for roughly 18 percent of India's Gross Value Added (GVA). A large-scale, ill-informed decision by farmers could have a severe impact on the entire economy of a region. We ought to build a system that can provide Indian farmers with predictive insights, allowing them to make better decisions about which crops to produce.In most circumstances, a farmer's decision on which crop to cultivate is impacted by his intuition as well as other irrelevant aspects.</p>
-     
-           </div>
-        
+          </div>
+
         </div>
-        
-     
+        <div className="why-block-next">
+          
 
-</section>
+          <div className="lar">
+            <figure>
+              <img src={chart2}  className="shadow-lg"alt="#" />
+            </figure>
+          </div>
 
-
-
+          <div className="titlepage ">
+            <p>
+            We ought to build a system that can provide
+              Indian farmers with predictive insights, allowing them to make
+              better decisions about which crops to produce.In most
+              circumstances, a farmer's decision on which crop to cultivate is
+              impacted by his intuition as well as other irrelevant aspects.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default Testimonials
+export default Testimonials;
